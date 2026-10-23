@@ -1,0 +1,166 @@
+{
+  "tool": "fathom",
+  "note": null,
+  "scripts": [
+    {
+      "url": "https://cdn.usefathom.com/script.js",
+      "bytes": 6981,
+      "gzip": 2083
+    },
+    {
+      "url": "https://cdn.usefathom.com/script.js",
+      "bytes": 6981,
+      "gzip": 2083
+    },
+    {
+      "url": "https://cdn.usefathom.com/script.js",
+      "bytes": 6981,
+      "gzip": 2083
+    },
+    {
+      "url": "https://cdn.usefathom.com/script.js",
+      "bytes": 6981,
+      "gzip": 2083
+    },
+    {
+      "url": "https://cdn.usefathom.com/script.js",
+      "bytes": 6981,
+      "gzip": 2083
+    }
+  ],
+  "afterLoad": {
+    "cookies": [],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": []
+  },
+  "afterVisit": {
+    "cookies": [],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": []
+  },
+  "sent": [
+    {
+      "phase": "load",
+      "method": "GET",
+      "url": "https://cdn.usefathom.com/?h=https%3A%2F%2Fcookieless-test.example&p=%2F&r=&sid=ABCDEFGH&qs=%7B%7D&cid=29675232",
+      "bodyBytes": 0,
+      "urlBytes": 111,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "internal-link",
+      "method": "POST",
+      "url": "https://cdn.usefathom.com/?dp=1&sid=ABCDEFGH&h=https%3A%2F%2Fcookieless-test.example&p=%2F&r=&qs=%7B%7D&d=35&cid=11234353",
+      "bodyBytes": 0,
+      "urlBytes": 121,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "internal-link",
+      "method": "GET",
+      "url": "https://cdn.usefathom.com/?h=https%3A%2F%2Fcookieless-test.example&p=%2Fpricing&r=&sid=ABCDEFGH&qs=%7B%7D&cid=87730229",
+      "bodyBytes": 0,
+      "urlBytes": 118,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "back",
+      "method": "POST",
+      "url": "https://cdn.usefathom.com/?dp=1&sid=ABCDEFGH&h=https%3A%2F%2Fcookieless-test.example&p=%2Fpricing&r=&qs=%7B%7D&d=4&cid=41386281",
+      "bodyBytes": 0,
+      "urlBytes": 127,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "back",
+      "method": "GET",
+      "url": "https://cdn.usefathom.com/?h=https%3A%2F%2Fcookieless-test.example&p=%2F&r=&sid=ABCDEFGH&qs=%7B%7D&cid=33658386",
+      "bodyBytes": 0,
+      "urlBytes": 111,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "outbound",
+      "method": "POST",
+      "url": "https://cdn.usefathom.com/?dp=1&sid=ABCDEFGH&h=https%3A%2F%2Fcookieless-test.example&p=%2F&r=&qs=%7B%7D&d=4&cid=66223963",
+      "bodyBytes": 0,
+      "urlBytes": 120,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "back-from-outbound",
+      "method": "GET",
+      "url": "https://cdn.usefathom.com/?h=https%3A%2F%2Fcookieless-test.example&p=%2F&r=&sid=ABCDEFGH&qs=%7B%7D&cid=70924625",
+      "bodyBytes": 0,
+      "urlBytes": 111,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "form",
+      "method": "POST",
+      "url": "https://cdn.usefathom.com/?dp=1&sid=ABCDEFGH&h=https%3A%2F%2Fcookieless-test.example&p=%2F&r=&qs=%7B%7D&d=4&cid=79422639",
+      "bodyBytes": 0,
+      "urlBytes": 120,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "form",
+      "method": "GET",
+      "url": "https://cdn.usefathom.com/?h=https%3A%2F%2Fcookieless-test.example&p=%2Fthanks&r=&sid=ABCDEFGH&qs=%7B%7D&cid=93881381",
+      "bodyBytes": 0,
+      "urlBytes": 117,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "email-in-url",
+      "method": "POST",
+      "url": "https://cdn.usefathom.com/?dp=1&sid=ABCDEFGH&h=https%3A%2F%2Fcookieless-test.example&p=%2Fthanks&r=&qs=%7B%7D&d=4&cid=46716317",
+      "bodyBytes": 0,
+      "urlBytes": 126,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "email-in-url",
+      "method": "GET",
+      "url": "https://cdn.usefathom.com/?h=https%3A%2F%2Fcookieless-test.example&p=%2Fwelcome&r=&sid=ABCDEFGH&qs=%7B%22utm_source%22%3A%22newsletter%22%7D&cid=64922672",
+      "bodyBytes": 0,
+      "urlBytes": 153,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "close",
+      "method": "POST",
+      "url": "https://cdn.usefathom.com/?dp=1&sid=ABCDEFGH&h=https%3A%2F%2Fcookieless-test.example&p=%2Fwelcome&r=&qs=%7B%22utm_source%22%3A%22newsletter%22%7D&d=4&cid=35838147",
+      "bodyBytes": 0,
+      "urlBytes": 162,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    }
+  ],
+  "ranAt": "2026-10-23T18:21:59.435Z"
+}

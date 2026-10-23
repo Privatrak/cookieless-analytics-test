@@ -1,0 +1,7 @@
+node_modules
+scripts
+blocklists
+results
+package-lock.json
+# Vendor install snippets, kept exactly as the vendors publish them.
+src/tools/**/*.html

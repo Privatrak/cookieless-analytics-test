@@ -1,0 +1,166 @@
+{
+  "tool": "plausible",
+  "note": "@plausible-analytics/tracker 0.4.6 with its documented defaults (the code behind the pa-*.js site script)",
+  "scripts": [
+    {
+      "url": "https://cookieless-test.example/vendor/plausible.js",
+      "bytes": 6434,
+      "gzip": 2670
+    },
+    {
+      "url": "https://cookieless-test.example/vendor/plausible.js",
+      "bytes": 6434,
+      "gzip": 2670
+    },
+    {
+      "url": "https://cookieless-test.example/vendor/plausible.js",
+      "bytes": 6434,
+      "gzip": 2670
+    },
+    {
+      "url": "https://cookieless-test.example/vendor/plausible.js",
+      "bytes": 6434,
+      "gzip": 2670
+    },
+    {
+      "url": "https://cookieless-test.example/vendor/plausible.js",
+      "bytes": 6434,
+      "gzip": 2670
+    }
+  ],
+  "afterLoad": {
+    "cookies": [],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": []
+  },
+  "afterVisit": {
+    "cookies": [],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": []
+  },
+  "sent": [
+    {
+      "phase": "load",
+      "method": "POST",
+      "url": "https://plausible.io/api/event",
+      "bodyBytes": 101,
+      "urlBytes": 30,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"n\":\"pageview\",\"v\":36,\"u\":\"https://cookieless-test.example/\",\"d\":\"cookieless-test.example\",\"r\":null}"
+    },
+    {
+      "phase": "internal-link",
+      "method": "POST",
+      "url": "https://plausible.io/api/event",
+      "bodyBytes": 113,
+      "urlBytes": 30,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"n\":\"engagement\",\"sd\":100,\"d\":\"cookieless-test.example\",\"u\":\"https://cookieless-test.example/\",\"e\":34673,\"v\":36}"
+    },
+    {
+      "phase": "internal-link",
+      "method": "POST",
+      "url": "https://plausible.io/api/event",
+      "bodyBytes": 138,
+      "urlBytes": 30,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"n\":\"pageview\",\"v\":36,\"u\":\"https://cookieless-test.example/pricing\",\"d\":\"cookieless-test.example\",\"r\":\"https://cookieless-test.example/\"}"
+    },
+    {
+      "phase": "back",
+      "method": "POST",
+      "url": "https://plausible.io/api/event",
+      "bodyBytes": 119,
+      "urlBytes": 30,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"n\":\"engagement\",\"sd\":100,\"d\":\"cookieless-test.example\",\"u\":\"https://cookieless-test.example/pricing\",\"e\":4019,\"v\":36}"
+    },
+    {
+      "phase": "back",
+      "method": "POST",
+      "url": "https://plausible.io/api/event",
+      "bodyBytes": 101,
+      "urlBytes": 30,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"n\":\"pageview\",\"v\":36,\"u\":\"https://cookieless-test.example/\",\"d\":\"cookieless-test.example\",\"r\":null}"
+    },
+    {
+      "phase": "outbound",
+      "method": "POST",
+      "url": "https://plausible.io/api/event",
+      "bodyBytes": 112,
+      "urlBytes": 30,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"n\":\"engagement\",\"sd\":100,\"d\":\"cookieless-test.example\",\"u\":\"https://cookieless-test.example/\",\"e\":4076,\"v\":36}"
+    },
+    {
+      "phase": "back-from-outbound",
+      "method": "POST",
+      "url": "https://plausible.io/api/event",
+      "bodyBytes": 101,
+      "urlBytes": 30,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"n\":\"pageview\",\"v\":36,\"u\":\"https://cookieless-test.example/\",\"d\":\"cookieless-test.example\",\"r\":null}"
+    },
+    {
+      "phase": "form",
+      "method": "POST",
+      "url": "https://plausible.io/api/event",
+      "bodyBytes": 112,
+      "urlBytes": 30,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"n\":\"engagement\",\"sd\":100,\"d\":\"cookieless-test.example\",\"u\":\"https://cookieless-test.example/\",\"e\":4071,\"v\":36}"
+    },
+    {
+      "phase": "form",
+      "method": "POST",
+      "url": "https://plausible.io/api/event",
+      "bodyBytes": 137,
+      "urlBytes": 30,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"n\":\"pageview\",\"v\":36,\"u\":\"https://cookieless-test.example/thanks\",\"d\":\"cookieless-test.example\",\"r\":\"https://cookieless-test.example/\"}"
+    },
+    {
+      "phase": "email-in-url",
+      "method": "POST",
+      "url": "https://plausible.io/api/event",
+      "bodyBytes": 118,
+      "urlBytes": 30,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"n\":\"engagement\",\"sd\":100,\"d\":\"cookieless-test.example\",\"u\":\"https://cookieless-test.example/thanks\",\"e\":4014,\"v\":36}"
+    },
+    {
+      "phase": "email-in-url",
+      "method": "POST",
+      "url": "https://plausible.io/api/event",
+      "bodyBytes": 158,
+      "urlBytes": 30,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"n\":\"pageview\",\"v\":36,\"u\":\"https://cookieless-test.example/welcome?email=someone%40example.com&utm_source=newsletter\",\"d\":\"cookieless-test.example\",\"r\":null}"
+    },
+    {
+      "phase": "close",
+      "method": "POST",
+      "url": "https://plausible.io/api/event",
+      "bodyBytes": 169,
+      "urlBytes": 30,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"n\":\"engagement\",\"sd\":100,\"d\":\"cookieless-test.example\",\"u\":\"https://cookieless-test.example/welcome?email=someone%40example.com&utm_source=newsletter\",\"e\":4015,\"v\":36}"
+    }
+  ],
+  "ranAt": "2026-10-23T18:21:00.333Z"
+}

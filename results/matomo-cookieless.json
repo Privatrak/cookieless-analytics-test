@@ -1,0 +1,126 @@
+{
+  "tool": "matomo-cookieless",
+  "note": "matomo.js 5.5.1, standard tracking code plus _paq.push(['disableCookies'])",
+  "scripts": [
+    {
+      "url": "https://cdn.matomo.cloud/example.matomo.cloud/matomo.js",
+      "bytes": 67972,
+      "gzip": 22170
+    },
+    {
+      "url": "https://cdn.matomo.cloud/example.matomo.cloud/matomo.js",
+      "bytes": 67972,
+      "gzip": 22170
+    },
+    {
+      "url": "https://cdn.matomo.cloud/example.matomo.cloud/matomo.js",
+      "bytes": 67972,
+      "gzip": 22170
+    },
+    {
+      "url": "https://cdn.matomo.cloud/example.matomo.cloud/matomo.js",
+      "bytes": 67972,
+      "gzip": 22170
+    },
+    {
+      "url": "https://cdn.matomo.cloud/example.matomo.cloud/matomo.js",
+      "bytes": 67972,
+      "gzip": 22170
+    }
+  ],
+  "afterLoad": {
+    "cookies": [],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": []
+  },
+  "afterVisit": {
+    "cookies": [],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": []
+  },
+  "sent": [
+    {
+      "phase": "load",
+      "method": "POST",
+      "url": "https://example.matomo.cloud/matomo.php?action_name=Test%20shop&idsite=1&rec=1&r=708836&h=20&m=25&s=55&url=https%3A%2F%2Fcookieless-test.example%2F&_id=&_idn=1&send_image=0&_refts=0&pv_id=NJqBHn&pf_net=1&pf_srv=1&pf_tfr=0&pf_dm1=12&uadata=%7B%22formFactors%22%3A%5B%22Desktop%22%5D%2C%22fullVersionList%22%3A%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224.0.0.0%22%7D%5D%2C%22mobile%22%3Afalse%2C%22model%22%3A%22%22%2C%22platform%22%3A%22macOS%22%2C%22platformVersion%22%3A%2210_15_7%22%7D&pdf=1&qt=0&realp=0&wma=0&fla=0&java=0&ag=0&cookie=1&res=1280x800",
+      "bodyBytes": 0,
+      "urlBytes": 728,
+      "contentType": "application/x-www-form-urlencoded; charset=utf-8",
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "download",
+      "method": "POST",
+      "url": "https://example.matomo.cloud/matomo.php?download=https%3A%2F%2Fcookieless-test.example%2Ffiles%2Freport.pdf&idsite=1&rec=1&r=933959&h=20&m=26&s=24&url=https%3A%2F%2Fcookieless-test.example%2F&_id=&_idn=1&send_image=0&_refts=0&pf_net=1&pf_srv=1&pf_tfr=0&pf_dm1=12&pf_dm2=6&pf_onl=0&pv_id=NJqBHn&uadata=%7B%22formFactors%22%3A%5B%22Desktop%22%5D%2C%22fullVersionList%22%3A%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224.0.0.0%22%7D%5D%2C%22mobile%22%3Afalse%2C%22model%22%3A%22%22%2C%22platform%22%3A%22macOS%22%2C%22platformVersion%22%3A%2210_15_7%22%7D&pdf=1&qt=0&realp=0&wma=0&fla=0&java=0&ag=0&cookie=1&res=1280x800",
+      "bodyBytes": 0,
+      "urlBytes": 790,
+      "contentType": "application/x-www-form-urlencoded; charset=utf-8",
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "internal-link",
+      "method": "POST",
+      "url": "https://example.matomo.cloud/matomo.php?action_name=Pricing&idsite=1&rec=1&r=984003&h=20&m=26&s=30&url=https%3A%2F%2Fcookieless-test.example%2Fpricing&urlref=https%3A%2F%2Fcookieless-test.example%2F&_id=&_idn=1&send_image=0&_refts=0&pv_id=YR36J4&pf_net=1&pf_srv=0&pf_tfr=0&pf_dm1=3&uadata=%7B%22formFactors%22%3A%5B%22Desktop%22%5D%2C%22fullVersionList%22%3A%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224.0.0.0%22%7D%5D%2C%22mobile%22%3Afalse%2C%22model%22%3A%22%22%2C%22platform%22%3A%22macOS%22%2C%22platformVersion%22%3A%2210_15_7%22%7D&pdf=1&qt=0&realp=0&wma=0&fla=0&java=0&ag=0&cookie=1&res=1280x800",
+      "bodyBytes": 0,
+      "urlBytes": 778,
+      "contentType": "application/x-www-form-urlencoded; charset=utf-8",
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "back",
+      "method": "POST",
+      "url": "https://example.matomo.cloud/matomo.php?action_name=Test%20shop&idsite=1&rec=1&r=218178&h=20&m=26&s=34&url=https%3A%2F%2Fcookieless-test.example%2F&_id=&_idn=1&send_image=0&_refts=0&pv_id=ukxo8c&pf_net=0&pf_srv=0&pf_tfr=1&pf_dm1=3&uadata=%7B%22formFactors%22%3A%5B%22Desktop%22%5D%2C%22fullVersionList%22%3A%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224.0.0.0%22%7D%5D%2C%22mobile%22%3Afalse%2C%22model%22%3A%22%22%2C%22platform%22%3A%22macOS%22%2C%22platformVersion%22%3A%2210_15_7%22%7D&pdf=1&qt=0&realp=0&wma=0&fla=0&java=0&ag=0&cookie=1&res=1280x800",
+      "bodyBytes": 0,
+      "urlBytes": 727,
+      "contentType": "application/x-www-form-urlencoded; charset=utf-8",
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "outbound",
+      "method": "POST",
+      "url": "https://example.matomo.cloud/matomo.php?link=https%3A%2F%2Fexample.org%2Fpartner&idsite=1&rec=1&r=801494&h=20&m=26&s=38&url=https%3A%2F%2Fcookieless-test.example%2F&_id=&_idn=1&send_image=0&_refts=0&pf_net=0&pf_srv=0&pf_tfr=1&pf_dm1=3&pf_dm2=6&pf_onl=0&pv_id=ukxo8c&uadata=%7B%22formFactors%22%3A%5B%22Desktop%22%5D%2C%22fullVersionList%22%3A%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224.0.0.0%22%7D%5D%2C%22mobile%22%3Afalse%2C%22model%22%3A%22%22%2C%22platform%22%3A%22macOS%22%2C%22platformVersion%22%3A%2210_15_7%22%7D&pdf=1&qt=0&realp=0&wma=0&fla=0&java=0&ag=0&cookie=1&res=1280x800",
+      "bodyBytes": 0,
+      "urlBytes": 762,
+      "contentType": "application/x-www-form-urlencoded; charset=utf-8",
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "back-from-outbound",
+      "method": "POST",
+      "url": "https://example.matomo.cloud/matomo.php?action_name=Test%20shop&idsite=1&rec=1&r=414084&h=20&m=26&s=41&url=https%3A%2F%2Fcookieless-test.example%2F&_id=&_idn=1&send_image=0&_refts=0&pv_id=Z2qEXg&pf_net=1&pf_srv=1&pf_tfr=0&pf_dm1=18&uadata=%7B%22formFactors%22%3A%5B%22Desktop%22%5D%2C%22fullVersionList%22%3A%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224.0.0.0%22%7D%5D%2C%22mobile%22%3Afalse%2C%22model%22%3A%22%22%2C%22platform%22%3A%22macOS%22%2C%22platformVersion%22%3A%2210_15_7%22%7D&pdf=1&qt=0&realp=0&wma=0&fla=0&java=0&ag=0&cookie=1&res=1280x800",
+      "bodyBytes": 0,
+      "urlBytes": 728,
+      "contentType": "application/x-www-form-urlencoded; charset=utf-8",
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "form",
+      "method": "POST",
+      "url": "https://example.matomo.cloud/matomo.php?action_name=Thanks&idsite=1&rec=1&r=086781&h=20&m=26&s=45&url=https%3A%2F%2Fcookieless-test.example%2Fthanks&urlref=https%3A%2F%2Fcookieless-test.example%2F&_id=&_idn=1&send_image=0&_refts=0&pv_id=sT8d51&pf_net=0&pf_srv=1&pf_tfr=0&pf_dm1=2&uadata=%7B%22formFactors%22%3A%5B%22Desktop%22%5D%2C%22fullVersionList%22%3A%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224.0.0.0%22%7D%5D%2C%22mobile%22%3Afalse%2C%22model%22%3A%22%22%2C%22platform%22%3A%22macOS%22%2C%22platformVersion%22%3A%2210_15_7%22%7D&pdf=1&qt=0&realp=0&wma=0&fla=0&java=0&ag=0&cookie=1&res=1280x800",
+      "bodyBytes": 0,
+      "urlBytes": 776,
+      "contentType": "application/x-www-form-urlencoded; charset=utf-8",
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "email-in-url",
+      "method": "POST",
+      "url": "https://example.matomo.cloud/matomo.php?action_name=Welcome&idsite=1&rec=1&r=569516&h=20&m=26&s=49&url=https%3A%2F%2Fcookieless-test.example%2Fwelcome%3Femail%3Dsomeone%40example.com%26utm_source%3Dnewsletter&_id=&_idn=1&send_image=0&_rcn=newsletter&_refts=1792780009&pv_id=VvzigE&pf_net=0&pf_srv=1&pf_tfr=0&pf_dm1=2&uadata=%7B%22formFactors%22%3A%5B%22Desktop%22%5D%2C%22fullVersionList%22%3A%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224.0.0.0%22%7D%5D%2C%22mobile%22%3Afalse%2C%22model%22%3A%22%22%2C%22platform%22%3A%22macOS%22%2C%22platformVersion%22%3A%2210_15_7%22%7D&pdf=1&qt=0&realp=0&wma=0&fla=0&java=0&ag=0&cookie=1&res=1280x800",
+      "bodyBytes": 0,
+      "urlBytes": 813,
+      "contentType": "application/x-www-form-urlencoded; charset=utf-8",
+      "cookieHeader": null,
+      "body": null
+    }
+  ],
+  "ranAt": "2026-10-23T18:26:55.158Z"
+}

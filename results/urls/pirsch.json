@@ -1,0 +1,376 @@
+{
+  "tool": "pirsch",
+  "cases": [
+    {
+      "id": "query-email",
+      "path": "/welcome?email=someone%40example.com&utm_source=newsletter",
+      "secret": "email"
+    },
+    {
+      "id": "query-email-other-name",
+      "path": "/welcome?u=someone%40example.com&utm_source=newsletter",
+      "secret": "email"
+    },
+    {
+      "id": "query-token",
+      "path": "/reset-password?token=k3J9xQ2mP8vL",
+      "secret": "token"
+    },
+    {
+      "id": "path-email",
+      "path": "/unsubscribe/someone@example.com",
+      "secret": "email"
+    },
+    {
+      "id": "path-id",
+      "path": "/users/48213/settings",
+      "secret": "id"
+    },
+    {
+      "id": "path-uuid",
+      "path": "/orders/3f1c9a1e-7b2d-4c8e-9f0a-1d2e3f4a5b6c",
+      "secret": "uuid"
+    },
+    {
+      "id": "fragment-token",
+      "path": "/callback#access_token=k3J9xQ2mP8vL",
+      "secret": "token"
+    },
+    {
+      "id": "referrer-email",
+      "path": "/account?email=someone%40example.com",
+      "secret": "email",
+      "then": "#next"
+    },
+    {
+      "id": "query-jwt-other-name",
+      "path": "/app?t=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0ODIxMyJ9.c2lnbmF0dXJlLXRlc3Q",
+      "secret": "jwt"
+    },
+    {
+      "id": "keep-search",
+      "path": "/search?q=running+shoes",
+      "keep": "q=running"
+    },
+    {
+      "id": "keep-page-sort",
+      "path": "/products?page=2&sort=price",
+      "keep": "sort=price"
+    },
+    {
+      "id": "keep-slug",
+      "path": "/products/blue-running-shoes",
+      "keep": "/products/blue-running-shoes"
+    },
+    {
+      "id": "keep-date",
+      "path": "/blog/2026/10/launch-notes",
+      "keep": "/blog/2026/10/launch-notes"
+    },
+    {
+      "id": "keep-version",
+      "path": "/docs/v2/install",
+      "keep": "/docs/v2/install"
+    }
+  ],
+  "secrets": {
+    "email": "someone@example.com",
+    "token": "k3J9xQ2mP8vL",
+    "id": "48213",
+    "uuid": "3f1c9a1e-7b2d-4c8e-9f0a-1d2e3f4a5b6c",
+    "jwt": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0ODIxMyJ9.c2lnbmF0dXJlLXRlc3Q"
+  },
+  "sent": [
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780703354&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2F&t=Test%20shop&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 157,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "query-email",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780705878&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2Fwelcome%3Femail%3Dsomeone%2540example.com%26utm_source%3Dnewsletter&t=Welcome&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 220,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780709900&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2F&t=Test%20shop&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 157,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "query-email-other-name",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780712418&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2Fwelcome%3Fu%3Dsomeone%2540example.com%26utm_source%3Dnewsletter&t=Welcome&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 216,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780716439&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2F&t=Test%20shop&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 157,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "query-token",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780718974&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2Freset-password%3Ftoken%3Dk3J9xQ2mP8vL&t=Page&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 187,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780722994&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2F&t=Test%20shop&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 157,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "path-email",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780725516&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2Funsubscribe%2Fsomeone%40example.com&t=Page&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 185,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780729534&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2F&t=Test%20shop&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 157,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "path-id",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780732049&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2Fusers%2F48213%2Fsettings&t=Page&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 174,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780736070&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2F&t=Test%20shop&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 157,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "path-uuid",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780738596&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2Forders%2F3f1c9a1e-7b2d-4c8e-9f0a-1d2e3f4a5b6c&t=Page&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 195,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780742615&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2F&t=Test%20shop&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 157,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "fragment-token",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780745130&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2Fcallback%23access_token%3Dk3J9xQ2mP8vL&t=Page&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 188,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780749153&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2F&t=Test%20shop&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 157,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "referrer-email",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780751678&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2Faccount%3Femail%3Dsomeone%2540example.com&t=Page&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 191,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "referrer-email",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780755794&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2Fpricing&t=Pricing&ref=https%3A%2F%2Fcookieless-test.example%2Faccount%3Femail%3Dsomeone%2540example.com&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 241,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780759812&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2F&t=Test%20shop&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 157,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "query-jwt-other-name",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780762327&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2Fapp%3Ft%3DeyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0ODIxMyJ9.c2lnbmF0dXJlLXRlc3Q&t=Page&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 221,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780766343&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2F&t=Test%20shop&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 157,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "keep-search",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780768872&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2Fsearch%3Fq%3Drunning%2Bshoes&t=Page&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 178,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780772895&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2F&t=Test%20shop&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 157,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "keep-page-sort",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780775422&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2Fproducts%3Fpage%3D2%26sort%3Dprice&t=Page&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 184,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780779439&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2F&t=Test%20shop&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 157,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "keep-slug",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780781956&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2Fproducts%2Fblue-running-shoes&t=Page&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 179,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780785975&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2F&t=Test%20shop&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 157,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "keep-date",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780788496&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2Fblog%2F2026%2F10%2Flaunch-notes&t=Page&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 181,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780792510&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2F&t=Test%20shop&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 157,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "keep-version",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792780795032&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2Fdocs%2Fv2%2Finstall&t=Page&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 169,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    }
+  ],
+  "ranAt": "2026-10-23T18:40:01.044Z"
+}

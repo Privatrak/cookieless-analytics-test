@@ -1,0 +1,106 @@
+{
+  "tool": "umami",
+  "note": null,
+  "scripts": [
+    {
+      "url": "https://cloud.umami.is/script.js",
+      "bytes": 4810,
+      "gzip": 2324
+    },
+    {
+      "url": "https://cloud.umami.is/script.js",
+      "bytes": 4810,
+      "gzip": 2324
+    },
+    {
+      "url": "https://cloud.umami.is/script.js",
+      "bytes": 4810,
+      "gzip": 2324
+    },
+    {
+      "url": "https://cloud.umami.is/script.js",
+      "bytes": 4810,
+      "gzip": 2324
+    },
+    {
+      "url": "https://cloud.umami.is/script.js",
+      "bytes": 4810,
+      "gzip": 2324
+    }
+  ],
+  "afterLoad": {
+    "cookies": [],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": []
+  },
+  "afterVisit": {
+    "cookies": [],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": []
+  },
+  "sent": [
+    {
+      "phase": "load",
+      "method": "POST",
+      "url": "https://gateway.umami.is/api/send",
+      "bodyBytes": 228,
+      "urlBytes": 33,
+      "contentType": "application/json",
+      "cookieHeader": null,
+      "body": "{\"type\":\"event\",\"payload\":{\"website\":\"94db1cb1-74f4-4a40-ad6c-962362670409\",\"screen\":\"1280x800\",\"language\":\"en-US\",\"title\":\"Test shop\",\"hostname\":\"cookieless-test.example\",\"url\":\"https://cookieless-test.example/\",\"referrer\":\"\"}}"
+    },
+    {
+      "phase": "internal-link",
+      "method": "POST",
+      "url": "https://gateway.umami.is/api/send",
+      "bodyBytes": 234,
+      "urlBytes": 33,
+      "contentType": "application/json",
+      "cookieHeader": null,
+      "body": "{\"type\":\"event\",\"payload\":{\"website\":\"94db1cb1-74f4-4a40-ad6c-962362670409\",\"screen\":\"1280x800\",\"language\":\"en-US\",\"title\":\"Pricing\",\"hostname\":\"cookieless-test.example\",\"url\":\"https://cookieless-test.example/pricing\",\"referrer\":\"/\"}}"
+    },
+    {
+      "phase": "back",
+      "method": "POST",
+      "url": "https://gateway.umami.is/api/send",
+      "bodyBytes": 228,
+      "urlBytes": 33,
+      "contentType": "application/json",
+      "cookieHeader": null,
+      "body": "{\"type\":\"event\",\"payload\":{\"website\":\"94db1cb1-74f4-4a40-ad6c-962362670409\",\"screen\":\"1280x800\",\"language\":\"en-US\",\"title\":\"Test shop\",\"hostname\":\"cookieless-test.example\",\"url\":\"https://cookieless-test.example/\",\"referrer\":\"\"}}"
+    },
+    {
+      "phase": "back-from-outbound",
+      "method": "POST",
+      "url": "https://gateway.umami.is/api/send",
+      "bodyBytes": 228,
+      "urlBytes": 33,
+      "contentType": "application/json",
+      "cookieHeader": null,
+      "body": "{\"type\":\"event\",\"payload\":{\"website\":\"94db1cb1-74f4-4a40-ad6c-962362670409\",\"screen\":\"1280x800\",\"language\":\"en-US\",\"title\":\"Test shop\",\"hostname\":\"cookieless-test.example\",\"url\":\"https://cookieless-test.example/\",\"referrer\":\"\"}}"
+    },
+    {
+      "phase": "form",
+      "method": "POST",
+      "url": "https://gateway.umami.is/api/send",
+      "bodyBytes": 232,
+      "urlBytes": 33,
+      "contentType": "application/json",
+      "cookieHeader": null,
+      "body": "{\"type\":\"event\",\"payload\":{\"website\":\"94db1cb1-74f4-4a40-ad6c-962362670409\",\"screen\":\"1280x800\",\"language\":\"en-US\",\"title\":\"Thanks\",\"hostname\":\"cookieless-test.example\",\"url\":\"https://cookieless-test.example/thanks\",\"referrer\":\"/\"}}"
+    },
+    {
+      "phase": "email-in-url",
+      "method": "POST",
+      "url": "https://gateway.umami.is/api/send",
+      "bodyBytes": 283,
+      "urlBytes": 33,
+      "contentType": "application/json",
+      "cookieHeader": null,
+      "body": "{\"type\":\"event\",\"payload\":{\"website\":\"94db1cb1-74f4-4a40-ad6c-962362670409\",\"screen\":\"1280x800\",\"language\":\"en-US\",\"title\":\"Welcome\",\"hostname\":\"cookieless-test.example\",\"url\":\"https://cookieless-test.example/welcome?email=someone%40example.com&utm_source=newsletter\",\"referrer\":\"\"}}"
+    }
+  ],
+  "ranAt": "2026-10-23T18:23:57.484Z"
+}

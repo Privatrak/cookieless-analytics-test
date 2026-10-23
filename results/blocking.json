@@ -1,0 +1,260 @@
+{
+  "plausible": [
+    {
+      "what": "script",
+      "url": "https://plausible.io/js/pa-AbCdEfGhIjKl.js",
+      "type": "script",
+      "verdicts": {
+        "uBlock Origin (default lists)": "blocked by ||plausible.io^$third-party",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "blocked by ||plausible.io^$third-party",
+        "AdGuard (Base + Tracking Protection)": "blocked by ||plausible.io^$3p"
+      }
+    },
+    {
+      "what": "send",
+      "url": "https://plausible.io/api/event",
+      "type": "xmlhttprequest",
+      "verdicts": {
+        "uBlock Origin (default lists)": "blocked by ||plausible.io^$third-party",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "blocked by ||plausible.io^$third-party",
+        "AdGuard (Base + Tracking Protection)": "blocked by ||plausible.io^$3p"
+      }
+    }
+  ],
+  "fathom": [
+    {
+      "what": "script",
+      "url": "https://cdn.usefathom.com/script.js",
+      "type": "script",
+      "verdicts": {
+        "uBlock Origin (default lists)": "blocked by ||cdn.usefathom.com^",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "blocked by ||cdn.usefathom.com^",
+        "AdGuard (Base + Tracking Protection)": "blocked by ||cdn.usefathom.com^"
+      }
+    },
+    {
+      "what": "send",
+      "url": "https://cdn.usefathom.com/?h=https%3A%2F%2Fcookieless-test.example&p=%2F&r=&sid=ABCDEFGH&qs=%7B%7D&cid=29675232",
+      "type": "image",
+      "verdicts": {
+        "uBlock Origin (default lists)": "blocked by ||cdn.usefathom.com^",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "blocked by ||cdn.usefathom.com^",
+        "AdGuard (Base + Tracking Protection)": "blocked by ||cdn.usefathom.com^"
+      }
+    }
+  ],
+  "simpleanalytics": [
+    {
+      "what": "script",
+      "url": "https://scripts.simpleanalyticscdn.com/latest.js",
+      "type": "script",
+      "verdicts": {
+        "uBlock Origin (default lists)": "blocked by ||simpleanalyticscdn.com^$third-party",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "blocked by ||simpleanalyticscdn.com^$third-party",
+        "AdGuard (Base + Tracking Protection)": "blocked by ||simpleanalyticscdn.com^$3p"
+      }
+    },
+    {
+      "what": "send",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2",
+      "type": "image",
+      "verdicts": {
+        "uBlock Origin (default lists)": "blocked by ||simpleanalyticscdn.com^$third-party",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "blocked by ||simpleanalyticscdn.com^$third-party",
+        "AdGuard (Base + Tracking Protection)": "blocked by ||simpleanalyticscdn.com^$3p"
+      }
+    },
+    {
+      "what": "send",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "type": "xmlhttprequest",
+      "verdicts": {
+        "uBlock Origin (default lists)": "blocked by ||simpleanalyticscdn.com^$third-party",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "blocked by ||simpleanalyticscdn.com^$third-party",
+        "AdGuard (Base + Tracking Protection)": "blocked by ||simpleanalyticscdn.com^$3p"
+      }
+    }
+  ],
+  "umami": [
+    {
+      "what": "script",
+      "url": "https://cloud.umami.is/script.js",
+      "type": "script",
+      "verdicts": {
+        "uBlock Origin (default lists)": "blocked by ||umami.is^$third-party",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "blocked by ||umami.is^$third-party",
+        "AdGuard (Base + Tracking Protection)": "blocked by ||umami.is^$3p"
+      }
+    },
+    {
+      "what": "send",
+      "url": "https://gateway.umami.is/api/send",
+      "type": "xmlhttprequest",
+      "verdicts": {
+        "uBlock Origin (default lists)": "blocked by ||umami.is^$third-party",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "blocked by ||umami.is^$third-party",
+        "AdGuard (Base + Tracking Protection)": "blocked by ||umami.is^$3p"
+      }
+    }
+  ],
+  "pirsch": [
+    {
+      "what": "script",
+      "url": "https://api.pirsch.io/pa.js",
+      "type": "script",
+      "verdicts": {
+        "uBlock Origin (default lists)": "blocked by ||pirsch.io^$third-party",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "blocked by ||pirsch.io^$third-party",
+        "AdGuard (Base + Tracking Protection)": "blocked by ||pirsch.io^$3p"
+      }
+    },
+    {
+      "what": "send",
+      "url": "https://api.pirsch.io/hit?nc=1792779837615&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2F&t=Test%20shop&ref=&w=1280&h=800",
+      "type": "xmlhttprequest",
+      "verdicts": {
+        "uBlock Origin (default lists)": "blocked by ||pirsch.io^$third-party",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "blocked by ||pirsch.io^$third-party",
+        "AdGuard (Base + Tracking Protection)": "blocked by ||pirsch.io^$3p"
+      }
+    },
+    {
+      "what": "send",
+      "url": "https://api.pirsch.io/event",
+      "type": "xmlhttprequest",
+      "verdicts": {
+        "uBlock Origin (default lists)": "blocked by ||pirsch.io^$third-party",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "blocked by ||pirsch.io^$third-party",
+        "AdGuard (Base + Tracking Protection)": "blocked by ||pirsch.io^$3p"
+      }
+    }
+  ],
+  "matomo": [
+    {
+      "what": "script",
+      "url": "https://cdn.matomo.cloud/example.matomo.cloud/matomo.js",
+      "type": "script",
+      "verdicts": {
+        "uBlock Origin (default lists)": "blocked by ||matomo.cloud^$third-party",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "blocked by ||matomo.cloud^$third-party",
+        "AdGuard (Base + Tracking Protection)": "blocked by /matomo.js$domain=~github.com"
+      }
+    },
+    {
+      "what": "send",
+      "url": "https://example.matomo.cloud/matomo.php?action_name=Test%20shop&idsite=1&rec=1&r=796139&h=20&m=24&s=56&url=https%3A%2F%2Fcookieless-test.example%2F&_id=cb9296a9",
+      "type": "xmlhttprequest",
+      "verdicts": {
+        "uBlock Origin (default lists)": "blocked by ||matomo.cloud^$third-party",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "blocked by ||matomo.cloud^$third-party",
+        "AdGuard (Base + Tracking Protection)": "blocked by /matomo.php?action_name= <+> /p.php?action_name= <+> &action=js_stats"
+      }
+    }
+  ],
+  "posthog": [
+    {
+      "what": "script",
+      "url": "https://us-assets.i.posthog.com/static/array.js",
+      "type": "script",
+      "verdicts": {
+        "uBlock Origin (default lists)": "blocked by ||i.posthog.com/static/array.js",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "blocked by ||i.posthog.com/static/array.js",
+        "AdGuard (Base + Tracking Protection)": "blocked by ||i.posthog.com^"
+      }
+    },
+    {
+      "what": "send",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "type": "xmlhttprequest",
+      "verdicts": {
+        "uBlock Origin (default lists)": "not blocked",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "not blocked",
+        "AdGuard (Base + Tracking Protection)": "blocked by ||i.posthog.com^"
+      }
+    },
+    {
+      "what": "send",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "type": "xmlhttprequest",
+      "verdicts": {
+        "uBlock Origin (default lists)": "not blocked",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "not blocked",
+        "AdGuard (Base + Tracking Protection)": "blocked by ||i.posthog.com^"
+      }
+    },
+    {
+      "what": "send",
+      "url": "https://us.i.posthog.com/e/",
+      "type": "xmlhttprequest",
+      "verdicts": {
+        "uBlock Origin (default lists)": "not blocked",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "not blocked",
+        "AdGuard (Base + Tracking Protection)": "blocked by ||i.posthog.com^"
+      }
+    }
+  ],
+  "mixpanel": [
+    {
+      "what": "script",
+      "url": "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js",
+      "type": "script",
+      "verdicts": {
+        "uBlock Origin (default lists)": "blocked by ||mxpnl.com^$third-party",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "blocked by ||mxpnl.com^$third-party",
+        "AdGuard (Base + Tracking Protection)": "blocked by ||mxpnl.com^$3p"
+      }
+    },
+    {
+      "what": "send",
+      "url": "https://api-js.mixpanel.com/track/?verbose=1&ip=1&_=1792780138796",
+      "type": "xmlhttprequest",
+      "verdicts": {
+        "uBlock Origin (default lists)": "blocked by ||mixpanel.com^$3p",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "blocked by ||mixpanel.com^$third-party",
+        "AdGuard (Base + Tracking Protection)": "blocked by ||mixpanel.com/track"
+      }
+    },
+    {
+      "what": "send",
+      "url": "https://api-js.mixpanel.com/record/?%24current_url=https%3A%2F%2Fcookieless-test.example%2F&%24lib_version=2.84.0&batch_start_time=1792780133.803&mp_lib=web&rep",
+      "type": "xmlhttprequest",
+      "verdicts": {
+        "uBlock Origin (default lists)": "blocked by ||mixpanel.com^$3p",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "blocked by ||mixpanel.com^$third-party",
+        "AdGuard (Base + Tracking Protection)": "blocked by ||mixpanel.com^$3p"
+      }
+    }
+  ],
+  "privatrak": [
+    {
+      "what": "script",
+      "url": "https://api.privatrak.com/tracker.js",
+      "type": "script",
+      "verdicts": {
+        "uBlock Origin (default lists)": "not blocked",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "not blocked",
+        "AdGuard (Base + Tracking Protection)": "not blocked"
+      }
+    },
+    {
+      "what": "send",
+      "url": "https://api.privatrak.com/api/config",
+      "type": "xmlhttprequest",
+      "verdicts": {
+        "uBlock Origin (default lists)": "not blocked",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "not blocked",
+        "AdGuard (Base + Tracking Protection)": "not blocked"
+      }
+    },
+    {
+      "what": "send",
+      "url": "https://api.privatrak.com/api/events",
+      "type": "xmlhttprequest",
+      "verdicts": {
+        "uBlock Origin (default lists)": "not blocked",
+        "EasyList + EasyPrivacy (Brave, Adblock Plus with privacy list)": "not blocked",
+        "AdGuard (Base + Tracking Protection)": "not blocked"
+      }
+    }
+  ]
+}

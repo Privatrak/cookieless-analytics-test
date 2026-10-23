@@ -1,0 +1,666 @@
+{
+  "tool": "simpleanalytics",
+  "cases": [
+    {
+      "id": "query-email",
+      "path": "/welcome?email=someone%40example.com&utm_source=newsletter",
+      "secret": "email"
+    },
+    {
+      "id": "query-email-other-name",
+      "path": "/welcome?u=someone%40example.com&utm_source=newsletter",
+      "secret": "email"
+    },
+    {
+      "id": "query-token",
+      "path": "/reset-password?token=k3J9xQ2mP8vL",
+      "secret": "token"
+    },
+    {
+      "id": "path-email",
+      "path": "/unsubscribe/someone@example.com",
+      "secret": "email"
+    },
+    {
+      "id": "path-id",
+      "path": "/users/48213/settings",
+      "secret": "id"
+    },
+    {
+      "id": "path-uuid",
+      "path": "/orders/3f1c9a1e-7b2d-4c8e-9f0a-1d2e3f4a5b6c",
+      "secret": "uuid"
+    },
+    {
+      "id": "fragment-token",
+      "path": "/callback#access_token=k3J9xQ2mP8vL",
+      "secret": "token"
+    },
+    {
+      "id": "referrer-email",
+      "path": "/account?email=someone%40example.com",
+      "secret": "email",
+      "then": "#next"
+    },
+    {
+      "id": "query-jwt-other-name",
+      "path": "/app?t=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0ODIxMyJ9.c2lnbmF0dXJlLXRlc3Q",
+      "secret": "jwt"
+    },
+    {
+      "id": "keep-search",
+      "path": "/search?q=running+shoes",
+      "keep": "q=running"
+    },
+    {
+      "id": "keep-page-sort",
+      "path": "/products?page=2&sort=price",
+      "keep": "sort=price"
+    },
+    {
+      "id": "keep-slug",
+      "path": "/products/blue-running-shoes",
+      "keep": "/products/blue-running-shoes"
+    },
+    {
+      "id": "keep-date",
+      "path": "/blog/2026/10/launch-notes",
+      "keep": "/blog/2026/10/launch-notes"
+    },
+    {
+      "id": "keep-version",
+      "path": "/docs/v2/install",
+      "keep": "/docs/v2/install"
+    }
+  ],
+  "secrets": {
+    "email": "someone@example.com",
+    "token": "k3J9xQ2mP8vL",
+    "id": "48213",
+    "uuid": "3f1c9a1e-7b2d-4c8e-9f0a-1d2e3f4a5b6c",
+    "jwt": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0ODIxMyJ9.c2lnbmF0dXJlLXRlc3Q"
+  },
+  "sent": [
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=6b693829-fc6a-4269-b860-fd1fa19c3fca&session_id=fbbe7e1d-e044-4018-b57a-75400889444a&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2F&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=6b693829-fc6a-4269-b860-fd1fa19c3fca&type=pageview&time=1792780507773",
+      "bodyBytes": 0,
+      "urlBytes": 846,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "query-email",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"6b693829-fc6a-4269-b860-fd1fa19c3fca\",\"duration\":3,\"scrolled\":100}"
+    },
+    {
+      "phase": "query-email",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=6ab9c601-d7ec-43fc-bc1c-40e45627b952&session_id=617b92ef-8be7-4214-9390-652fc39b0ea0&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2Fwelcome&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=6ab9c601-d7ec-43fc-bc1c-40e45627b952&type=pageview&query=utm_source%3Dnewsletter&time=1792780510292",
+      "bodyBytes": 0,
+      "urlBytes": 883,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"6ab9c601-d7ec-43fc-bc1c-40e45627b952\",\"duration\":4,\"scrolled\":100}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=e34c454d-6ac6-4bbe-a63f-6aae1f00fd88&session_id=fabd0c2d-f91f-4377-a21d-1567a952f859&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2F&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=e34c454d-6ac6-4bbe-a63f-6aae1f00fd88&type=pageview&time=1792780514308",
+      "bodyBytes": 0,
+      "urlBytes": 846,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "query-email-other-name",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"e34c454d-6ac6-4bbe-a63f-6aae1f00fd88\",\"duration\":3,\"scrolled\":100}"
+    },
+    {
+      "phase": "query-email-other-name",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=5c73f87b-bf63-4bb6-a9a2-a124e478b3b5&session_id=398b8db1-408c-46a2-9609-0279621c799a&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2Fwelcome&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=5c73f87b-bf63-4bb6-a9a2-a124e478b3b5&type=pageview&query=utm_source%3Dnewsletter&time=1792780516830",
+      "bodyBytes": 0,
+      "urlBytes": 883,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"5c73f87b-bf63-4bb6-a9a2-a124e478b3b5\",\"duration\":4,\"scrolled\":100}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=671274f8-97db-4206-a83f-f01d5b75feb3&session_id=79ec3446-4e81-490a-8b9d-929e7ed3c637&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2F&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=671274f8-97db-4206-a83f-f01d5b75feb3&type=pageview&time=1792780520853",
+      "bodyBytes": 0,
+      "urlBytes": 846,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "query-token",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"671274f8-97db-4206-a83f-f01d5b75feb3\",\"duration\":3,\"scrolled\":100}"
+    },
+    {
+      "phase": "query-token",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=a18e6fd5-b17f-4ecf-aa45-4d9c7a2c8225&session_id=acdd1d44-bdc8-4628-ba6c-bc0d1273f1f6&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2Freset-password&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=a18e6fd5-b17f-4ecf-aa45-4d9c7a2c8225&type=pageview&time=1792780523375",
+      "bodyBytes": 0,
+      "urlBytes": 860,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"a18e6fd5-b17f-4ecf-aa45-4d9c7a2c8225\",\"duration\":4,\"scrolled\":100}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=378160f8-5a44-43f3-a091-eb4ca795197f&session_id=3278894b-bd12-4ae4-aef5-360d655e301a&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2F&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=378160f8-5a44-43f3-a091-eb4ca795197f&type=pageview&time=1792780527392",
+      "bodyBytes": 0,
+      "urlBytes": 846,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "path-email",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"378160f8-5a44-43f3-a091-eb4ca795197f\",\"duration\":3,\"scrolled\":100}"
+    },
+    {
+      "phase": "path-email",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=39222c78-f1db-4ff8-9ef6-cda9b390d482&session_id=7d5a61e2-bb88-4cac-a073-8e9a18b6215e&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2Funsubscribe%2Fsomeone%40example.com&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=39222c78-f1db-4ff8-9ef6-cda9b390d482&type=pageview&time=1792780529916",
+      "bodyBytes": 0,
+      "urlBytes": 881,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"39222c78-f1db-4ff8-9ef6-cda9b390d482\",\"duration\":4,\"scrolled\":100}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=8375bf64-79f2-460b-ac55-4c3a53242ce3&session_id=a04e2a37-5d38-48e3-afea-96e3121dd20b&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2F&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=8375bf64-79f2-460b-ac55-4c3a53242ce3&type=pageview&time=1792780533931",
+      "bodyBytes": 0,
+      "urlBytes": 846,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "path-id",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"8375bf64-79f2-460b-ac55-4c3a53242ce3\",\"duration\":3,\"scrolled\":100}"
+    },
+    {
+      "phase": "path-id",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=5eb6d760-0bd5-4068-b6a4-ba372e2da909&session_id=fce46748-440a-4638-b8f9-45b47891a34c&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2Fusers%2F48213%2Fsettings&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=5eb6d760-0bd5-4068-b6a4-ba372e2da909&type=pageview&time=1792780536451",
+      "bodyBytes": 0,
+      "urlBytes": 870,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"5eb6d760-0bd5-4068-b6a4-ba372e2da909\",\"duration\":4,\"scrolled\":100}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=2bec2d50-daa8-415d-a584-0481a5a832ce&session_id=1ef103eb-2d8d-48bd-be60-2c028fd56ac9&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2F&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=2bec2d50-daa8-415d-a584-0481a5a832ce&type=pageview&time=1792780540461",
+      "bodyBytes": 0,
+      "urlBytes": 846,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "path-uuid",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"2bec2d50-daa8-415d-a584-0481a5a832ce\",\"duration\":3,\"scrolled\":100}"
+    },
+    {
+      "phase": "path-uuid",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=a64a06f0-dd41-4d50-abfe-8a02451965b3&session_id=6970eed3-c5cb-447a-b1e3-ba650ae8cbe6&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2Forders%2F3f1c9a1e-7b2d-4c8e-9f0a-1d2e3f4a5b6c&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=a64a06f0-dd41-4d50-abfe-8a02451965b3&type=pageview&time=1792780542982",
+      "bodyBytes": 0,
+      "urlBytes": 891,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"a64a06f0-dd41-4d50-abfe-8a02451965b3\",\"duration\":4,\"scrolled\":100}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=7f13358c-1539-4294-995f-5a7316979baf&session_id=90701374-71ec-4de4-b6e4-617bef6832cc&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2F&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=7f13358c-1539-4294-995f-5a7316979baf&type=pageview&time=1792780547002",
+      "bodyBytes": 0,
+      "urlBytes": 846,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "fragment-token",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"7f13358c-1539-4294-995f-5a7316979baf\",\"duration\":3,\"scrolled\":100}"
+    },
+    {
+      "phase": "fragment-token",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=4b48fadf-97fd-4748-9213-9ecfecc1a087&session_id=3309cc4c-5f2c-4750-a916-4741955e2a62&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2Fcallback&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=4b48fadf-97fd-4748-9213-9ecfecc1a087&type=pageview&time=1792780549523",
+      "bodyBytes": 0,
+      "urlBytes": 854,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"4b48fadf-97fd-4748-9213-9ecfecc1a087\",\"duration\":4,\"scrolled\":100}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=6ee45060-7e1d-4189-bb2a-2b56224fef0a&session_id=b456eee0-d3c6-4194-85ef-9ce9f5c8af66&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2F&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=6ee45060-7e1d-4189-bb2a-2b56224fef0a&type=pageview&time=1792780553547",
+      "bodyBytes": 0,
+      "urlBytes": 846,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "referrer-email",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"6ee45060-7e1d-4189-bb2a-2b56224fef0a\",\"duration\":3,\"scrolled\":100}"
+    },
+    {
+      "phase": "referrer-email",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=759b31d5-1bd4-4ee7-8fb1-5395ff2bb1f8&session_id=de213129-4570-4b32-b173-5a0bed6ebbd3&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2Faccount&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=759b31d5-1bd4-4ee7-8fb1-5395ff2bb1f8&type=pageview&time=1792780556061",
+      "bodyBytes": 0,
+      "urlBytes": 853,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "referrer-email",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"759b31d5-1bd4-4ee7-8fb1-5395ff2bb1f8\",\"duration\":4,\"scrolled\":100}"
+    },
+    {
+      "phase": "referrer-email",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=9c98b596-cebf-4673-bf72-ee89e4d8ac5e&session_id=20b000fc-dc1e-42fd-b305-cdd475322b6c&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2Fpricing&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=false&id=9c98b596-cebf-4673-bf72-ee89e4d8ac5e&type=pageview&referrer=cookieless-test.example%2Faccount&time=1792780560158",
+      "bodyBytes": 0,
+      "urlBytes": 897,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"9c98b596-cebf-4673-bf72-ee89e4d8ac5e\",\"duration\":4,\"scrolled\":100}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=29d4a2e2-5aad-4323-aa17-65d814849006&session_id=bc2650f1-8180-4b4b-9b9a-27766dd9301b&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2F&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=29d4a2e2-5aad-4323-aa17-65d814849006&type=pageview&time=1792780564174",
+      "bodyBytes": 0,
+      "urlBytes": 846,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "query-jwt-other-name",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"29d4a2e2-5aad-4323-aa17-65d814849006\",\"duration\":3,\"scrolled\":100}"
+    },
+    {
+      "phase": "query-jwt-other-name",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=d744abf4-40ca-44f5-95d9-dfe8c2adafe1&session_id=4101e085-6c88-4f4b-8fc8-5ecc290e0d33&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2Fapp&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=d744abf4-40ca-44f5-95d9-dfe8c2adafe1&type=pageview&time=1792780566693",
+      "bodyBytes": 0,
+      "urlBytes": 849,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"d744abf4-40ca-44f5-95d9-dfe8c2adafe1\",\"duration\":4,\"scrolled\":100}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=ae272618-a1e5-42db-a1c3-b5df441c9805&session_id=4e0b1d54-2ac0-4084-a938-cfebb4f22d8f&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2F&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=ae272618-a1e5-42db-a1c3-b5df441c9805&type=pageview&time=1792780570708",
+      "bodyBytes": 0,
+      "urlBytes": 846,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "keep-search",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"ae272618-a1e5-42db-a1c3-b5df441c9805\",\"duration\":3,\"scrolled\":100}"
+    },
+    {
+      "phase": "keep-search",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=d12146cc-72ad-49f7-bccc-65086bdc8527&session_id=a4f0e8ec-421d-4810-9c36-caf6e3729358&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2Fsearch&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=d12146cc-72ad-49f7-bccc-65086bdc8527&type=pageview&time=1792780573228",
+      "bodyBytes": 0,
+      "urlBytes": 852,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"d12146cc-72ad-49f7-bccc-65086bdc8527\",\"duration\":4,\"scrolled\":100}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=282a7c1d-1c0b-4376-838f-36eb9bb70994&session_id=f563fedd-84ff-4ef3-86af-c6f8e33597be&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2F&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=282a7c1d-1c0b-4376-838f-36eb9bb70994&type=pageview&time=1792780577248",
+      "bodyBytes": 0,
+      "urlBytes": 846,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "keep-page-sort",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"282a7c1d-1c0b-4376-838f-36eb9bb70994\",\"duration\":3,\"scrolled\":100}"
+    },
+    {
+      "phase": "keep-page-sort",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=3a9c82cb-41c5-4ba7-8e09-85489cca4a03&session_id=ab210f49-ec6e-4f23-b48d-c9f91fe219fc&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2Fproducts&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=3a9c82cb-41c5-4ba7-8e09-85489cca4a03&type=pageview&time=1792780579774",
+      "bodyBytes": 0,
+      "urlBytes": 854,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"3a9c82cb-41c5-4ba7-8e09-85489cca4a03\",\"duration\":4,\"scrolled\":100}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=1c7d7e41-d0ba-4103-b6b2-f0b6f0bf6144&session_id=bb33c3a1-97c0-4288-b9df-7c5aa17d8558&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2F&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=1c7d7e41-d0ba-4103-b6b2-f0b6f0bf6144&type=pageview&time=1792780583797",
+      "bodyBytes": 0,
+      "urlBytes": 846,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "keep-slug",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"1c7d7e41-d0ba-4103-b6b2-f0b6f0bf6144\",\"duration\":3,\"scrolled\":100}"
+    },
+    {
+      "phase": "keep-slug",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=20503e89-7f8e-491d-82de-ecece07597e8&session_id=6ce276d0-e996-4d41-be8d-65ff5e80a27f&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2Fproducts%2Fblue-running-shoes&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=20503e89-7f8e-491d-82de-ecece07597e8&type=pageview&time=1792780586310",
+      "bodyBytes": 0,
+      "urlBytes": 875,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"20503e89-7f8e-491d-82de-ecece07597e8\",\"duration\":4,\"scrolled\":100}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=ba964223-5525-4e3d-9c19-5e985ac06e29&session_id=85d52945-2779-46be-9794-3ccf3f040b53&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2F&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=ba964223-5525-4e3d-9c19-5e985ac06e29&type=pageview&time=1792780590334",
+      "bodyBytes": 0,
+      "urlBytes": 846,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "keep-date",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"ba964223-5525-4e3d-9c19-5e985ac06e29\",\"duration\":3,\"scrolled\":100}"
+    },
+    {
+      "phase": "keep-date",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=840a8905-72ea-4dcb-86d8-5fcf0a156069&session_id=da1cf4b1-1f65-43fd-b9d4-e55cfa89d398&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2Fblog%2F2026%2F10%2Flaunch-notes&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=840a8905-72ea-4dcb-86d8-5fcf0a156069&type=pageview&time=1792780592861",
+      "bodyBytes": 0,
+      "urlBytes": 877,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"840a8905-72ea-4dcb-86d8-5fcf0a156069\",\"duration\":4,\"scrolled\":100}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=764c31fa-7874-499d-b95f-4b077ff8229c&session_id=eb1620cb-c6be-446c-9717-989ace2e0198&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2F&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=764c31fa-7874-499d-b95f-4b077ff8229c&type=pageview&time=1792780596876",
+      "bodyBytes": 0,
+      "urlBytes": 846,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "keep-version",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"764c31fa-7874-499d-b95f-4b077ff8229c\",\"duration\":3,\"scrolled\":100}"
+    },
+    {
+      "phase": "keep-version",
+      "method": "GET",
+      "url": "https://queue.simpleanalyticscdn.com/simple.gif?version=cdn_latest_11&hostname=cookieless-test.example&ua=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F141.0.0.0%20Safari%2F537.36&https=true&timezone=Europe%2FBerlin&page_id=8bd8696f-b6bf-47ef-a914-be110aecc037&session_id=7274403c-2022-432b-95c6-bee57bf20426&sri=false&mobile=false&brands=%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224%22%7D%5D&os_name=macOS&os_version=10_15_7&path=%2Fdocs%2Fv2%2Finstall&viewport_width=1280&viewport_height=800&language=en-US&screen_width=1280&screen_height=800&unique=true&id=8bd8696f-b6bf-47ef-a914-be110aecc037&type=pageview&time=1792780599403",
+      "bodyBytes": 0,
+      "urlBytes": 865,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "close",
+      "method": "POST",
+      "url": "https://queue.simpleanalyticscdn.com/append",
+      "bodyBytes": 161,
+      "urlBytes": 43,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"version\":\"cdn_latest_11\",\"hostname\":\"cookieless-test.example\",\"type\":\"append\",\"original_id\":\"8bd8696f-b6bf-47ef-a914-be110aecc037\",\"duration\":4,\"scrolled\":100}"
+    }
+  ],
+  "ranAt": "2026-10-23T18:36:45.422Z"
+}

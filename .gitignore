@@ -1,0 +1,5 @@
+node_modules/
+scripts/
+blocklists/
+key.pem
+cert.pem

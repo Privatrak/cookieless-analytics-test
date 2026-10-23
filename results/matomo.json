@@ -1,0 +1,148 @@
+{
+  "tool": "matomo",
+  "note": "matomo.js 5.5.1, the standard tracking code",
+  "scripts": [
+    {
+      "url": "https://cdn.matomo.cloud/example.matomo.cloud/matomo.js",
+      "bytes": 67972,
+      "gzip": 22170
+    },
+    {
+      "url": "https://cdn.matomo.cloud/example.matomo.cloud/matomo.js",
+      "bytes": 67972,
+      "gzip": 22170
+    },
+    {
+      "url": "https://cdn.matomo.cloud/example.matomo.cloud/matomo.js",
+      "bytes": 67972,
+      "gzip": 22170
+    },
+    {
+      "url": "https://cdn.matomo.cloud/example.matomo.cloud/matomo.js",
+      "bytes": 67972,
+      "gzip": 22170
+    },
+    {
+      "url": "https://cdn.matomo.cloud/example.matomo.cloud/matomo.js",
+      "bytes": 67972,
+      "gzip": 22170
+    }
+  ],
+  "afterLoad": {
+    "cookies": [
+      {
+        "name": "_pk_id.1.b0c1",
+        "domain": "cookieless-test.example",
+        "expires": "2027-11-20T18:24:57.000Z"
+      },
+      {
+        "name": "_pk_ses.1.b0c1",
+        "domain": "cookieless-test.example",
+        "expires": "2026-10-23T18:54:56.000Z"
+      }
+    ],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": []
+  },
+  "afterVisit": {
+    "cookies": [
+      {
+        "name": "_pk_id.1.b0c1",
+        "domain": "cookieless-test.example",
+        "expires": "2027-11-20T18:24:57.000Z"
+      },
+      {
+        "name": "_pk_ses.1.b0c1",
+        "domain": "cookieless-test.example",
+        "expires": "2026-10-23T18:55:49.000Z"
+      }
+    ],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": []
+  },
+  "sent": [
+    {
+      "phase": "load",
+      "method": "POST",
+      "url": "https://example.matomo.cloud/matomo.php?action_name=Test%20shop&idsite=1&rec=1&r=796139&h=20&m=24&s=56&url=https%3A%2F%2Fcookieless-test.example%2F&_id=cb9296a99662d80d&_idn=1&send_image=0&_refts=0&pv_id=WRa3vh&pf_net=2&pf_srv=1&pf_tfr=0&pf_dm1=3&uadata=%7B%22formFactors%22%3A%5B%22Desktop%22%5D%2C%22fullVersionList%22%3A%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224.0.0.0%22%7D%5D%2C%22mobile%22%3Afalse%2C%22model%22%3A%22%22%2C%22platform%22%3A%22macOS%22%2C%22platformVersion%22%3A%2210_15_7%22%7D&pdf=1&qt=0&realp=0&wma=0&fla=0&java=0&ag=0&cookie=1&res=1280x800",
+      "bodyBytes": 0,
+      "urlBytes": 743,
+      "contentType": "application/x-www-form-urlencoded; charset=utf-8",
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "download",
+      "method": "POST",
+      "url": "https://example.matomo.cloud/matomo.php?download=https%3A%2F%2Fcookieless-test.example%2Ffiles%2Freport.pdf&idsite=1&rec=1&r=918531&h=20&m=25&s=25&url=https%3A%2F%2Fcookieless-test.example%2F&_id=cb9296a99662d80d&_idn=0&send_image=0&_refts=0&pf_net=2&pf_srv=1&pf_tfr=0&pf_dm1=3&pf_dm2=19&pf_onl=0&pv_id=WRa3vh&uadata=%7B%22formFactors%22%3A%5B%22Desktop%22%5D%2C%22fullVersionList%22%3A%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224.0.0.0%22%7D%5D%2C%22mobile%22%3Afalse%2C%22model%22%3A%22%22%2C%22platform%22%3A%22macOS%22%2C%22platformVersion%22%3A%2210_15_7%22%7D&pdf=1&qt=0&realp=0&wma=0&fla=0&java=0&ag=0&cookie=1&res=1280x800",
+      "bodyBytes": 0,
+      "urlBytes": 806,
+      "contentType": "application/x-www-form-urlencoded; charset=utf-8",
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "internal-link",
+      "method": "POST",
+      "url": "https://example.matomo.cloud/matomo.php?action_name=Pricing&idsite=1&rec=1&r=120926&h=20&m=25&s=31&url=https%3A%2F%2Fcookieless-test.example%2Fpricing&urlref=https%3A%2F%2Fcookieless-test.example%2F&_id=cb9296a99662d80d&_idn=0&send_image=0&_refts=0&pv_id=8yLrcZ&pf_net=1&pf_srv=0&pf_tfr=1&pf_dm1=2&uadata=%7B%22formFactors%22%3A%5B%22Desktop%22%5D%2C%22fullVersionList%22%3A%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224.0.0.0%22%7D%5D%2C%22mobile%22%3Afalse%2C%22model%22%3A%22%22%2C%22platform%22%3A%22macOS%22%2C%22platformVersion%22%3A%2210_15_7%22%7D&pdf=1&qt=0&realp=0&wma=0&fla=0&java=0&ag=0&cookie=1&res=1280x800",
+      "bodyBytes": 0,
+      "urlBytes": 794,
+      "contentType": "application/x-www-form-urlencoded; charset=utf-8",
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "back",
+      "method": "POST",
+      "url": "https://example.matomo.cloud/matomo.php?action_name=Test%20shop&idsite=1&rec=1&r=933473&h=20&m=25&s=35&url=https%3A%2F%2Fcookieless-test.example%2F&_id=cb9296a99662d80d&_idn=0&send_image=0&_refts=0&pv_id=qFvfLk&pf_net=0&pf_srv=0&pf_tfr=1&pf_dm1=4&uadata=%7B%22formFactors%22%3A%5B%22Desktop%22%5D%2C%22fullVersionList%22%3A%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224.0.0.0%22%7D%5D%2C%22mobile%22%3Afalse%2C%22model%22%3A%22%22%2C%22platform%22%3A%22macOS%22%2C%22platformVersion%22%3A%2210_15_7%22%7D&pdf=1&qt=0&realp=0&wma=0&fla=0&java=0&ag=0&cookie=1&res=1280x800",
+      "bodyBytes": 0,
+      "urlBytes": 743,
+      "contentType": "application/x-www-form-urlencoded; charset=utf-8",
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "outbound",
+      "method": "POST",
+      "url": "https://example.matomo.cloud/matomo.php?link=https%3A%2F%2Fexample.org%2Fpartner&idsite=1&rec=1&r=673108&h=20&m=25&s=39&url=https%3A%2F%2Fcookieless-test.example%2F&_id=cb9296a99662d80d&_idn=0&send_image=0&_refts=0&pf_net=0&pf_srv=0&pf_tfr=1&pf_dm1=4&pf_dm2=6&pf_onl=0&pv_id=qFvfLk&uadata=%7B%22formFactors%22%3A%5B%22Desktop%22%5D%2C%22fullVersionList%22%3A%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224.0.0.0%22%7D%5D%2C%22mobile%22%3Afalse%2C%22model%22%3A%22%22%2C%22platform%22%3A%22macOS%22%2C%22platformVersion%22%3A%2210_15_7%22%7D&pdf=1&qt=0&realp=0&wma=0&fla=0&java=0&ag=0&cookie=1&res=1280x800",
+      "bodyBytes": 0,
+      "urlBytes": 778,
+      "contentType": "application/x-www-form-urlencoded; charset=utf-8",
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "back-from-outbound",
+      "method": "POST",
+      "url": "https://example.matomo.cloud/matomo.php?action_name=Test%20shop&idsite=1&rec=1&r=645860&h=20&m=25&s=41&url=https%3A%2F%2Fcookieless-test.example%2F&_id=cb9296a99662d80d&_idn=0&send_image=0&_refts=0&pv_id=rw5QgF&pf_net=0&pf_srv=0&pf_tfr=1&pf_dm1=20&uadata=%7B%22formFactors%22%3A%5B%22Desktop%22%5D%2C%22fullVersionList%22%3A%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224.0.0.0%22%7D%5D%2C%22mobile%22%3Afalse%2C%22model%22%3A%22%22%2C%22platform%22%3A%22macOS%22%2C%22platformVersion%22%3A%2210_15_7%22%7D&pdf=1&qt=0&realp=0&wma=0&fla=0&java=0&ag=0&cookie=1&res=1280x800",
+      "bodyBytes": 0,
+      "urlBytes": 744,
+      "contentType": "application/x-www-form-urlencoded; charset=utf-8",
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "form",
+      "method": "POST",
+      "url": "https://example.matomo.cloud/matomo.php?action_name=Thanks&idsite=1&rec=1&r=377970&h=20&m=25&s=45&url=https%3A%2F%2Fcookieless-test.example%2Fthanks&urlref=https%3A%2F%2Fcookieless-test.example%2F&_id=cb9296a99662d80d&_idn=0&send_image=0&_refts=0&pv_id=nNx981&pf_net=0&pf_srv=1&pf_tfr=0&pf_dm1=2&uadata=%7B%22formFactors%22%3A%5B%22Desktop%22%5D%2C%22fullVersionList%22%3A%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224.0.0.0%22%7D%5D%2C%22mobile%22%3Afalse%2C%22model%22%3A%22%22%2C%22platform%22%3A%22macOS%22%2C%22platformVersion%22%3A%2210_15_7%22%7D&pdf=1&qt=0&realp=0&wma=0&fla=0&java=0&ag=0&cookie=1&res=1280x800",
+      "bodyBytes": 0,
+      "urlBytes": 792,
+      "contentType": "application/x-www-form-urlencoded; charset=utf-8",
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "email-in-url",
+      "method": "POST",
+      "url": "https://example.matomo.cloud/matomo.php?action_name=Welcome&idsite=1&rec=1&r=384684&h=20&m=25&s=49&url=https%3A%2F%2Fcookieless-test.example%2Fwelcome%3Femail%3Dsomeone%40example.com%26utm_source%3Dnewsletter&_id=cb9296a99662d80d&_idn=0&send_image=0&_refts=0&pv_id=6kPQB7&pf_net=0&pf_srv=0&pf_tfr=0&pf_dm1=3&uadata=%7B%22formFactors%22%3A%5B%22Desktop%22%5D%2C%22fullVersionList%22%3A%5B%7B%22brand%22%3A%22Google%20Chrome%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Chromium%22%2C%22version%22%3A%22155.0.8059.85%22%7D%2C%7B%22brand%22%3A%22Not(A%3ABrand%22%2C%22version%22%3A%2224.0.0.0%22%7D%5D%2C%22mobile%22%3Afalse%2C%22model%22%3A%22%22%2C%22platform%22%3A%22macOS%22%2C%22platformVersion%22%3A%2210_15_7%22%7D&pdf=1&qt=0&realp=0&wma=0&fla=0&java=0&ag=0&cookie=1&res=1280x800",
+      "bodyBytes": 0,
+      "urlBytes": 804,
+      "contentType": "application/x-www-form-urlencoded; charset=utf-8",
+      "cookieHeader": null,
+      "body": null
+    }
+  ],
+  "ranAt": "2026-10-23T18:25:55.839Z"
+}

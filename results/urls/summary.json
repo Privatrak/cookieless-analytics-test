@@ -1,0 +1,866 @@
+{
+  "plausible": {
+    "query-email": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/welcome?email=someone%40example.com&utm_source=newsletter",
+      "verdict": "leaked"
+    },
+    "query-email-other-name": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/welcome?u=someone%40example.com&utm_source=newsletter",
+      "verdict": "leaked"
+    },
+    "query-token": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/reset-password?token=k3J9xQ2mP8vL",
+      "verdict": "leaked"
+    },
+    "path-email": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/unsubscribe/someone@example.com",
+      "verdict": "leaked"
+    },
+    "path-id": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/users/48213/settings",
+      "verdict": "leaked"
+    },
+    "path-uuid": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/orders/3f1c9a1e-7b2d-4c8e-9f0a-1d2e3f4a5b6c",
+      "verdict": "leaked"
+    },
+    "fragment-token": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/callback#access_token=k3J9xQ2mP8vL",
+      "verdict": "leaked"
+    },
+    "referrer-email": {
+      "where": "referrer",
+      "recorded": "https://cookieless-test.example/account?email=someone%40example.com",
+      "verdict": "leaked"
+    },
+    "query-jwt-other-name": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/app?t=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0ODIxMyJ9.c2lnbmF0dXJlLXRlc3Q",
+      "verdict": "leaked"
+    },
+    "keep-search": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/search?q=running+shoes",
+      "verdict": "kept"
+    },
+    "keep-page-sort": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/products?page=2&sort=price",
+      "verdict": "kept"
+    },
+    "keep-slug": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/products/blue-running-shoes",
+      "verdict": "kept"
+    },
+    "keep-date": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/blog/2026/10/launch-notes",
+      "verdict": "kept"
+    },
+    "keep-version": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/docs/v2/install",
+      "verdict": "kept"
+    }
+  },
+  "fathom": {
+    "query-email": {
+      "where": "page",
+      "recorded": "/welcome?utm_source=newsletter",
+      "verdict": "dropped"
+    },
+    "query-email-other-name": {
+      "where": "page",
+      "recorded": "/welcome?utm_source=newsletter",
+      "verdict": "dropped"
+    },
+    "query-token": {
+      "where": "page",
+      "recorded": "/reset-password",
+      "verdict": "dropped"
+    },
+    "path-email": {
+      "where": "page",
+      "recorded": "/unsubscribe/someone@example.com",
+      "verdict": "leaked"
+    },
+    "path-id": {
+      "where": "page",
+      "recorded": "/users/48213/settings",
+      "verdict": "leaked"
+    },
+    "path-uuid": {
+      "where": "page",
+      "recorded": "/orders/3f1c9a1e-7b2d-4c8e-9f0a-1d2e3f4a5b6c",
+      "verdict": "leaked"
+    },
+    "fragment-token": {
+      "where": "page",
+      "recorded": "/callback",
+      "verdict": "dropped"
+    },
+    "referrer-email": {
+      "where": "referrer",
+      "recorded": "",
+      "verdict": "no referrer"
+    },
+    "query-jwt-other-name": {
+      "where": "page",
+      "recorded": "/app",
+      "verdict": "dropped"
+    },
+    "keep-search": {
+      "where": "page",
+      "recorded": "/search?q=running+shoes",
+      "verdict": "kept"
+    },
+    "keep-page-sort": {
+      "where": "page",
+      "recorded": "/products",
+      "verdict": "dropped"
+    },
+    "keep-slug": {
+      "where": "page",
+      "recorded": "/products/blue-running-shoes",
+      "verdict": "kept"
+    },
+    "keep-date": {
+      "where": "page",
+      "recorded": "/blog/2026/10/launch-notes",
+      "verdict": "kept"
+    },
+    "keep-version": {
+      "where": "page",
+      "recorded": "/docs/v2/install",
+      "verdict": "kept"
+    }
+  },
+  "simpleanalytics": {
+    "query-email": {
+      "where": "page",
+      "recorded": "/welcome?utm_source=newsletter",
+      "verdict": "dropped"
+    },
+    "query-email-other-name": {
+      "where": "page",
+      "recorded": "/welcome?utm_source=newsletter",
+      "verdict": "dropped"
+    },
+    "query-token": {
+      "where": "page",
+      "recorded": "/reset-password",
+      "verdict": "dropped"
+    },
+    "path-email": {
+      "where": "page",
+      "recorded": "/unsubscribe/someone@example.com",
+      "verdict": "leaked"
+    },
+    "path-id": {
+      "where": "page",
+      "recorded": "/users/48213/settings",
+      "verdict": "leaked"
+    },
+    "path-uuid": {
+      "where": "page",
+      "recorded": "/orders/3f1c9a1e-7b2d-4c8e-9f0a-1d2e3f4a5b6c",
+      "verdict": "leaked"
+    },
+    "fragment-token": {
+      "where": "page",
+      "recorded": "/callback",
+      "verdict": "dropped"
+    },
+    "referrer-email": {
+      "where": "referrer",
+      "recorded": "cookieless-test.example/account",
+      "verdict": "dropped"
+    },
+    "query-jwt-other-name": {
+      "where": "page",
+      "recorded": "/app",
+      "verdict": "dropped"
+    },
+    "keep-search": {
+      "where": "page",
+      "recorded": "/search",
+      "verdict": "dropped"
+    },
+    "keep-page-sort": {
+      "where": "page",
+      "recorded": "/products",
+      "verdict": "dropped"
+    },
+    "keep-slug": {
+      "where": "page",
+      "recorded": "/products/blue-running-shoes",
+      "verdict": "kept"
+    },
+    "keep-date": {
+      "where": "page",
+      "recorded": "/blog/2026/10/launch-notes",
+      "verdict": "kept"
+    },
+    "keep-version": {
+      "where": "page",
+      "recorded": "/docs/v2/install",
+      "verdict": "kept"
+    }
+  },
+  "umami": {
+    "query-email": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/welcome?email=someone%40example.com&utm_source=newsletter",
+      "verdict": "leaked"
+    },
+    "query-email-other-name": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/welcome?u=someone%40example.com&utm_source=newsletter",
+      "verdict": "leaked"
+    },
+    "query-token": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/reset-password?token=k3J9xQ2mP8vL",
+      "verdict": "leaked"
+    },
+    "path-email": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/unsubscribe/someone@example.com",
+      "verdict": "leaked"
+    },
+    "path-id": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/users/48213/settings",
+      "verdict": "leaked"
+    },
+    "path-uuid": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/orders/3f1c9a1e-7b2d-4c8e-9f0a-1d2e3f4a5b6c",
+      "verdict": "leaked"
+    },
+    "fragment-token": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/callback#access_token=k3J9xQ2mP8vL",
+      "verdict": "leaked"
+    },
+    "referrer-email": {
+      "where": "referrer",
+      "recorded": "/account?email=someone%40example.com",
+      "verdict": "leaked"
+    },
+    "query-jwt-other-name": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/app?t=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0ODIxMyJ9.c2lnbmF0dXJlLXRlc3Q",
+      "verdict": "leaked"
+    },
+    "keep-search": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/search?q=running+shoes",
+      "verdict": "kept"
+    },
+    "keep-page-sort": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/products?page=2&sort=price",
+      "verdict": "kept"
+    },
+    "keep-slug": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/products/blue-running-shoes",
+      "verdict": "kept"
+    },
+    "keep-date": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/blog/2026/10/launch-notes",
+      "verdict": "kept"
+    },
+    "keep-version": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/docs/v2/install",
+      "verdict": "kept"
+    }
+  },
+  "pirsch": {
+    "query-email": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/welcome?email=someone%40example.com&utm_source=newsletter",
+      "verdict": "leaked"
+    },
+    "query-email-other-name": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/welcome?u=someone%40example.com&utm_source=newsletter",
+      "verdict": "leaked"
+    },
+    "query-token": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/reset-password?token=k3J9xQ2mP8vL",
+      "verdict": "leaked"
+    },
+    "path-email": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/unsubscribe/someone@example.com",
+      "verdict": "leaked"
+    },
+    "path-id": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/users/48213/settings",
+      "verdict": "leaked"
+    },
+    "path-uuid": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/orders/3f1c9a1e-7b2d-4c8e-9f0a-1d2e3f4a5b6c",
+      "verdict": "leaked"
+    },
+    "fragment-token": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/callback#access_token=k3J9xQ2mP8vL",
+      "verdict": "leaked"
+    },
+    "referrer-email": {
+      "where": "referrer",
+      "recorded": "https://cookieless-test.example/account?email=someone%40example.com",
+      "verdict": "leaked"
+    },
+    "query-jwt-other-name": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/app?t=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0ODIxMyJ9.c2lnbmF0dXJlLXRlc3Q",
+      "verdict": "leaked"
+    },
+    "keep-search": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/search?q=running+shoes",
+      "verdict": "kept"
+    },
+    "keep-page-sort": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/products?page=2&sort=price",
+      "verdict": "kept"
+    },
+    "keep-slug": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/products/blue-running-shoes",
+      "verdict": "kept"
+    },
+    "keep-date": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/blog/2026/10/launch-notes",
+      "verdict": "kept"
+    },
+    "keep-version": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/docs/v2/install",
+      "verdict": "kept"
+    }
+  },
+  "matomo": {
+    "query-email": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/welcome?email=someone@example.com&utm_source=newsletter",
+      "verdict": "leaked"
+    },
+    "query-email-other-name": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/welcome?u=someone@example.com&utm_source=newsletter",
+      "verdict": "leaked"
+    },
+    "query-token": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/reset-password?token=k3J9xQ2mP8vL",
+      "verdict": "leaked"
+    },
+    "path-email": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/unsubscribe/someone@example.com",
+      "verdict": "leaked"
+    },
+    "path-id": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/users/48213/settings",
+      "verdict": "leaked"
+    },
+    "path-uuid": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/orders/3f1c9a1e-7b2d-4c8e-9f0a-1d2e3f4a5b6c",
+      "verdict": "leaked"
+    },
+    "fragment-token": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/callback#access_token=k3J9xQ2mP8vL",
+      "verdict": "leaked"
+    },
+    "referrer-email": {
+      "where": "referrer",
+      "recorded": "https://cookieless-test.example/account?email=someone@example.com",
+      "verdict": "leaked"
+    },
+    "query-jwt-other-name": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/app?t=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0ODIxMyJ9.c2lnbmF0dXJlLXRlc3Q",
+      "verdict": "leaked"
+    },
+    "keep-search": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/search?q=running+shoes",
+      "verdict": "kept"
+    },
+    "keep-page-sort": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/products?page=2&sort=price",
+      "verdict": "kept"
+    },
+    "keep-slug": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/products/blue-running-shoes",
+      "verdict": "kept"
+    },
+    "keep-date": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/blog/2026/10/launch-notes",
+      "verdict": "kept"
+    },
+    "keep-version": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/docs/v2/install",
+      "verdict": "kept"
+    }
+  },
+  "matomo-cookieless": {
+    "query-email": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/welcome?email=someone@example.com&utm_source=newsletter",
+      "verdict": "leaked"
+    },
+    "query-email-other-name": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/welcome?u=someone@example.com&utm_source=newsletter",
+      "verdict": "leaked"
+    },
+    "query-token": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/reset-password?token=k3J9xQ2mP8vL",
+      "verdict": "leaked"
+    },
+    "path-email": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/unsubscribe/someone@example.com",
+      "verdict": "leaked"
+    },
+    "path-id": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/users/48213/settings",
+      "verdict": "leaked"
+    },
+    "path-uuid": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/orders/3f1c9a1e-7b2d-4c8e-9f0a-1d2e3f4a5b6c",
+      "verdict": "leaked"
+    },
+    "fragment-token": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/callback#access_token=k3J9xQ2mP8vL",
+      "verdict": "leaked"
+    },
+    "referrer-email": {
+      "where": "referrer",
+      "recorded": "https://cookieless-test.example/account?email=someone@example.com",
+      "verdict": "leaked"
+    },
+    "query-jwt-other-name": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/app?t=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0ODIxMyJ9.c2lnbmF0dXJlLXRlc3Q",
+      "verdict": "leaked"
+    },
+    "keep-search": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/search?q=running+shoes",
+      "verdict": "kept"
+    },
+    "keep-page-sort": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/products?page=2&sort=price",
+      "verdict": "kept"
+    },
+    "keep-slug": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/products/blue-running-shoes",
+      "verdict": "kept"
+    },
+    "keep-date": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/blog/2026/10/launch-notes",
+      "verdict": "kept"
+    },
+    "keep-version": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/docs/v2/install",
+      "verdict": "kept"
+    }
+  },
+  "posthog": {
+    "query-email": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/welcome?email=someone%40example.com&utm_source=newsletter",
+      "verdict": "leaked"
+    },
+    "query-email-other-name": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/welcome?u=someone%40example.com&utm_source=newsletter",
+      "verdict": "leaked"
+    },
+    "query-token": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/reset-password?token=k3J9xQ2mP8vL",
+      "verdict": "leaked"
+    },
+    "path-email": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/unsubscribe/someone@example.com",
+      "verdict": "leaked"
+    },
+    "path-id": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/users/48213/settings",
+      "verdict": "leaked"
+    },
+    "path-uuid": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/orders/3f1c9a1e-7b2d-4c8e-9f0a-1d2e3f4a5b6c",
+      "verdict": "leaked"
+    },
+    "fragment-token": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/callback#access_token=k3J9xQ2mP8vL",
+      "verdict": "leaked"
+    },
+    "referrer-email": {
+      "where": "referrer",
+      "recorded": "$direct",
+      "verdict": "no referrer"
+    },
+    "query-jwt-other-name": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/app?t=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0ODIxMyJ9.c2lnbmF0dXJlLXRlc3Q",
+      "verdict": "leaked"
+    },
+    "keep-search": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/search?q=running+shoes",
+      "verdict": "kept"
+    },
+    "keep-page-sort": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/products?page=2&sort=price",
+      "verdict": "kept"
+    },
+    "keep-slug": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/products/blue-running-shoes",
+      "verdict": "kept"
+    },
+    "keep-date": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/blog/2026/10/launch-notes",
+      "verdict": "kept"
+    },
+    "keep-version": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/docs/v2/install",
+      "verdict": "kept"
+    }
+  },
+  "posthog-cookieless": {
+    "query-email": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/welcome?email=someone%40example.com&utm_source=newsletter",
+      "verdict": "leaked"
+    },
+    "query-email-other-name": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/welcome?u=someone%40example.com&utm_source=newsletter",
+      "verdict": "leaked"
+    },
+    "query-token": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/reset-password?token=k3J9xQ2mP8vL",
+      "verdict": "leaked"
+    },
+    "path-email": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/unsubscribe/someone@example.com",
+      "verdict": "leaked"
+    },
+    "path-id": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/users/48213/settings",
+      "verdict": "leaked"
+    },
+    "path-uuid": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/orders/3f1c9a1e-7b2d-4c8e-9f0a-1d2e3f4a5b6c",
+      "verdict": "leaked"
+    },
+    "fragment-token": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/callback#access_token=k3J9xQ2mP8vL",
+      "verdict": "leaked"
+    },
+    "referrer-email": {
+      "where": "referrer",
+      "recorded": "https://cookieless-test.example/account?email=someone%40example.com",
+      "verdict": "leaked"
+    },
+    "query-jwt-other-name": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/app?t=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0ODIxMyJ9.c2lnbmF0dXJlLXRlc3Q",
+      "verdict": "leaked"
+    },
+    "keep-search": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/search?q=running+shoes",
+      "verdict": "kept"
+    },
+    "keep-page-sort": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/products?page=2&sort=price",
+      "verdict": "kept"
+    },
+    "keep-slug": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/products/blue-running-shoes",
+      "verdict": "kept"
+    },
+    "keep-date": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/blog/2026/10/launch-notes",
+      "verdict": "kept"
+    },
+    "keep-version": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/docs/v2/install",
+      "verdict": "kept"
+    }
+  },
+  "mixpanel": {
+    "query-email": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/welcome?email=someone%40example.com&utm_source=newsletter",
+      "verdict": "leaked"
+    },
+    "query-email-other-name": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/welcome?u=someone%40example.com&utm_source=newsletter",
+      "verdict": "leaked"
+    },
+    "query-token": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/reset-password?token=k3J9xQ2mP8vL",
+      "verdict": "leaked"
+    },
+    "path-email": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/unsubscribe/someone@example.com",
+      "verdict": "leaked"
+    },
+    "path-id": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/users/48213/settings",
+      "verdict": "leaked"
+    },
+    "path-uuid": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/orders/3f1c9a1e-7b2d-4c8e-9f0a-1d2e3f4a5b6c",
+      "verdict": "leaked"
+    },
+    "fragment-token": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/callback#access_token=k3J9xQ2mP8vL",
+      "verdict": "leaked"
+    },
+    "referrer-email": {
+      "where": "referrer",
+      "recorded": "https://cookieless-test.example/account?email=someone%40example.com",
+      "verdict": "leaked"
+    },
+    "query-jwt-other-name": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/app?t=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0ODIxMyJ9.c2lnbmF0dXJlLXRlc3Q",
+      "verdict": "leaked"
+    },
+    "keep-search": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/search?q=running+shoes",
+      "verdict": "kept"
+    },
+    "keep-page-sort": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/products?page=2&sort=price",
+      "verdict": "kept"
+    },
+    "keep-slug": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/products/blue-running-shoes",
+      "verdict": "kept"
+    },
+    "keep-date": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/blog/2026/10/launch-notes",
+      "verdict": "kept"
+    },
+    "keep-version": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/docs/v2/install",
+      "verdict": "kept"
+    }
+  },
+  "mixpanel-cookieless": {
+    "query-email": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/welcome?email=someone%40example.com&utm_source=newsletter",
+      "verdict": "leaked"
+    },
+    "query-email-other-name": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/welcome?u=someone%40example.com&utm_source=newsletter",
+      "verdict": "leaked"
+    },
+    "query-token": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/reset-password?token=k3J9xQ2mP8vL",
+      "verdict": "leaked"
+    },
+    "path-email": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/unsubscribe/someone@example.com",
+      "verdict": "leaked"
+    },
+    "path-id": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/users/48213/settings",
+      "verdict": "leaked"
+    },
+    "path-uuid": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/orders/3f1c9a1e-7b2d-4c8e-9f0a-1d2e3f4a5b6c",
+      "verdict": "leaked"
+    },
+    "fragment-token": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/callback#access_token=k3J9xQ2mP8vL",
+      "verdict": "leaked"
+    },
+    "referrer-email": {
+      "where": "referrer",
+      "recorded": "https://cookieless-test.example/account?email=someone%40example.com",
+      "verdict": "leaked"
+    },
+    "query-jwt-other-name": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/app?t=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0ODIxMyJ9.c2lnbmF0dXJlLXRlc3Q",
+      "verdict": "leaked"
+    },
+    "keep-search": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/search?q=running+shoes",
+      "verdict": "kept"
+    },
+    "keep-page-sort": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/products?page=2&sort=price",
+      "verdict": "kept"
+    },
+    "keep-slug": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/products/blue-running-shoes",
+      "verdict": "kept"
+    },
+    "keep-date": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/blog/2026/10/launch-notes",
+      "verdict": "kept"
+    },
+    "keep-version": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/docs/v2/install",
+      "verdict": "kept"
+    }
+  },
+  "privatrak": {
+    "query-email": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/welcome?email=%3Aredacted&utm_source=newsletter",
+      "verdict": "redacted"
+    },
+    "query-email-other-name": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/welcome?u=%3Aredacted&utm_source=newsletter",
+      "verdict": "redacted"
+    },
+    "query-token": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/reset-password?token=%3Aredacted",
+      "verdict": "redacted"
+    },
+    "path-email": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/unsubscribe/:redacted",
+      "verdict": "redacted"
+    },
+    "path-id": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/users/:id/settings",
+      "verdict": "redacted"
+    },
+    "path-uuid": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/orders/:id",
+      "verdict": "redacted"
+    },
+    "fragment-token": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/callback#access_token=:redacted",
+      "verdict": "redacted"
+    },
+    "referrer-email": {
+      "where": "referrer",
+      "recorded": "https://cookieless-test.example/account?email=%3Aredacted",
+      "verdict": "redacted"
+    },
+    "query-jwt-other-name": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/app?t=%3Aredacted",
+      "verdict": "redacted"
+    },
+    "keep-search": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/search?q=running+shoes",
+      "verdict": "kept"
+    },
+    "keep-page-sort": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/products?page=2&sort=price",
+      "verdict": "kept"
+    },
+    "keep-slug": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/products/blue-running-shoes",
+      "verdict": "kept"
+    },
+    "keep-date": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/blog/:id/:id/launch-notes",
+      "verdict": "rewritten"
+    },
+    "keep-version": {
+      "where": "page",
+      "recorded": "https://cookieless-test.example/docs/v2/install",
+      "verdict": "kept"
+    }
+  }
+}

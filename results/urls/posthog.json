@@ -1,0 +1,976 @@
+{
+  "tool": "posthog",
+  "cases": [
+    {
+      "id": "query-email",
+      "path": "/welcome?email=someone%40example.com&utm_source=newsletter",
+      "secret": "email"
+    },
+    {
+      "id": "query-email-other-name",
+      "path": "/welcome?u=someone%40example.com&utm_source=newsletter",
+      "secret": "email"
+    },
+    {
+      "id": "query-token",
+      "path": "/reset-password?token=k3J9xQ2mP8vL",
+      "secret": "token"
+    },
+    {
+      "id": "path-email",
+      "path": "/unsubscribe/someone@example.com",
+      "secret": "email"
+    },
+    {
+      "id": "path-id",
+      "path": "/users/48213/settings",
+      "secret": "id"
+    },
+    {
+      "id": "path-uuid",
+      "path": "/orders/3f1c9a1e-7b2d-4c8e-9f0a-1d2e3f4a5b6c",
+      "secret": "uuid"
+    },
+    {
+      "id": "fragment-token",
+      "path": "/callback#access_token=k3J9xQ2mP8vL",
+      "secret": "token"
+    },
+    {
+      "id": "referrer-email",
+      "path": "/account?email=someone%40example.com",
+      "secret": "email",
+      "then": "#next"
+    },
+    {
+      "id": "query-jwt-other-name",
+      "path": "/app?t=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0ODIxMyJ9.c2lnbmF0dXJlLXRlc3Q",
+      "secret": "jwt"
+    },
+    {
+      "id": "keep-search",
+      "path": "/search?q=running+shoes",
+      "keep": "q=running"
+    },
+    {
+      "id": "keep-page-sort",
+      "path": "/products?page=2&sort=price",
+      "keep": "sort=price"
+    },
+    {
+      "id": "keep-slug",
+      "path": "/products/blue-running-shoes",
+      "keep": "/products/blue-running-shoes"
+    },
+    {
+      "id": "keep-date",
+      "path": "/blog/2026/10/launch-notes",
+      "keep": "/blog/2026/10/launch-notes"
+    },
+    {
+      "id": "keep-version",
+      "path": "/docs/v2/install",
+      "keep": "/docs/v2/install"
+    }
+  ],
+  "secrets": {
+    "email": "someone@example.com",
+    "token": "k3J9xQ2mP8vL",
+    "id": "48213",
+    "uuid": "3f1c9a1e-7b2d-4c8e-9f0a-1d2e3f4a5b6c",
+    "jwt": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0ODIxMyJ9.c2lnbmF0dXJlLXRlc3Q"
+  },
+  "sent": [
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 876,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a13-1191-70b9-8c97-8deaa1d546e6\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"hi896lx1a9cnety2\",\"$time\":1792780997.015,\"$sdk_dist_channel\":\"cdn\",\"$initialization_time\":\"2026-10-23T18:43:17.004Z\",\"$configured_session_timeout_ms\":1800000,\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":1,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"title\":\"Test shop\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a13-1191-70b9-8c97-8deaa1d546e6\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:43:17.009Z\"}],\"sent_at\":\"2026-10-23T18:43:17.017Z\"}"
+    },
+    {
+      "phase": "query-email",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "query-email",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1114,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a13-1b84-7cc9-bc97-5628d6b22bd9\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/welcome?email=someone%40example.com&utm_source=newsletter\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/welcome\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"cn0x0ja1c9hypduz\",\"$time\":1792780999.556,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:43:19.554Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Welcome\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a13-1b84-7cc9-bc97-5628d6b22bd9\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:43:19.556Z\"}],\"sent_at\":\"2026-10-23T18:43:19.557Z\"}"
+    },
+    {
+      "phase": "query-email",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1079,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a13-2b57-7945-b757-dc55d67f48da\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"pmw6chc6l7c7txif\",\"$time\":1792781003.607,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:43:23.604Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Test shop\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a13-2b57-7945-b757-dc55d67f48da\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:43:23.607Z\"}],\"sent_at\":\"2026-10-23T18:43:23.607Z\"}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "query-email-other-name",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "query-email-other-name",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1109,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a13-354d-7a50-8156-26fdd58503ff\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/welcome?u=someone%40example.com&utm_source=newsletter\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/welcome\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"l6sbl30di87h4lcm\",\"$time\":1792781006.158,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:43:26.155Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Welcome\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a13-354d-7a50-8156-26fdd58503ff\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:43:26.157Z\"}],\"sent_at\":\"2026-10-23T18:43:26.158Z\"}"
+    },
+    {
+      "phase": "query-email-other-name",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1083,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a13-4520-75d4-b6fd-2d925cbf2bbb\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"3ma4o6a1xxmylqq0\",\"$time\":1792781010.208,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:43:30.206Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Test shop\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a13-4520-75d4-b6fd-2d925cbf2bbb\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:43:30.208Z\"}],\"sent_at\":\"2026-10-23T18:43:30.209Z\"}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "query-token",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "query-token",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1110,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a13-4f15-7df6-b047-3577794464d6\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/reset-password?token=k3J9xQ2mP8vL\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/reset-password\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"j9gky7ooz7czrj3y\",\"$time\":1792781012.757,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:43:32.755Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Page\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a13-4f15-7df6-b047-3577794464d6\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:43:32.757Z\"}],\"sent_at\":\"2026-10-23T18:43:32.758Z\"}"
+    },
+    {
+      "phase": "query-token",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1079,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a13-5eec-7178-8099-b01f3544ebd0\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"01pivt4x91tb7tet\",\"$time\":1792781016.812,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:43:36.809Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Test shop\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a13-5eec-7178-8099-b01f3544ebd0\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:43:36.812Z\"}],\"sent_at\":\"2026-10-23T18:43:36.812Z\"}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "path-email",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "path-email",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1100,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a13-68db-716c-a62c-81bf4a55479c\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/unsubscribe/someone@example.com\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/unsubscribe/someone@example.com\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"xlfgokvububjm9sr\",\"$time\":1792781019.355,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:43:39.353Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Page\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a13-68db-716c-a62c-81bf4a55479c\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:43:39.355Z\"}],\"sent_at\":\"2026-10-23T18:43:39.356Z\"}"
+    },
+    {
+      "phase": "path-email",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1082,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a13-78b0-710b-ae98-e61442b51b13\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"tag1x9ip3x7hv8wx\",\"$time\":1792781023.408,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:43:43.405Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Test shop\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a13-78b0-710b-ae98-e61442b51b13\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:43:43.408Z\"}],\"sent_at\":\"2026-10-23T18:43:43.408Z\"}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "path-id",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "path-id",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1094,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a13-829c-73c6-b4ef-ed7e87442b7b\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/users/48213/settings\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/users/48213/settings\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"zo8m2cdq4yb5iv0v\",\"$time\":1792781025.948,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:43:45.946Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Page\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a13-829c-73c6-b4ef-ed7e87442b7b\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:43:45.948Z\"}],\"sent_at\":\"2026-10-23T18:43:45.949Z\"}"
+    },
+    {
+      "phase": "path-id",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1081,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a13-926a-78d3-b611-6e60bc0d9c9c\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"nmuu7ie2tfjhbarm\",\"$time\":1792781029.995,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:43:49.992Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Test shop\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a13-926a-78d3-b611-6e60bc0d9c9c\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:43:49.994Z\"}],\"sent_at\":\"2026-10-23T18:43:49.996Z\"}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "path-uuid",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "path-uuid",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1114,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a13-9c57-7e9a-bd7e-c93dc610ca16\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/orders/3f1c9a1e-7b2d-4c8e-9f0a-1d2e3f4a5b6c\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/orders/3f1c9a1e-7b2d-4c8e-9f0a-1d2e3f4a5b6c\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"s0osjyjjv8njq9ug\",\"$time\":1792781032.536,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:43:52.533Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Page\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a13-9c57-7e9a-bd7e-c93dc610ca16\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:43:52.535Z\"}],\"sent_at\":\"2026-10-23T18:43:52.536Z\"}"
+    },
+    {
+      "phase": "path-uuid",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1081,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a13-ac29-7ab2-b65a-8afb26389c82\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"5g92imdtibepu9ug\",\"$time\":1792781036.585,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:43:56.583Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Test shop\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a13-ac29-7ab2-b65a-8afb26389c82\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:43:56.585Z\"}],\"sent_at\":\"2026-10-23T18:43:56.586Z\"}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "fragment-token",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "fragment-token",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1107,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a13-b621-7f40-a0a6-b3fdaaa50ac4\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/callback#access_token=k3J9xQ2mP8vL\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/callback\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"awir64w0i2vqcent\",\"$time\":1792781039.137,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:43:59.135Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Page\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a13-b621-7f40-a0a6-b3fdaaa50ac4\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:43:59.137Z\"}],\"sent_at\":\"2026-10-23T18:43:59.138Z\"}"
+    },
+    {
+      "phase": "fragment-token",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1082,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a13-c5f2-7313-9d0c-645fa8edb976\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"papjr0fv6jqc01gr\",\"$time\":1792781043.186,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:44:03.184Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Test shop\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a13-c5f2-7313-9d0c-645fa8edb976\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:44:03.186Z\"}],\"sent_at\":\"2026-10-23T18:44:03.187Z\"}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "referrer-email",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "referrer-email",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1106,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a13-cfea-728f-9068-768bef55c7d0\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/account?email=someone%40example.com\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/account\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"rn0lsy8n8jfjxdbw\",\"$time\":1792781045.739,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:44:05.736Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Page\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a13-cfea-728f-9068-768bef55c7d0\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:44:05.738Z\"}],\"sent_at\":\"2026-10-23T18:44:05.739Z\"}"
+    },
+    {
+      "phase": "referrer-email",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "referrer-email",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1227,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a13-dfe5-73d4-b2ae-0bca0ad4931e\",\"event\":\"$autocapture\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/account?email=someone%40example.com\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/account\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"4se3cmozvh8jfghu\",\"$time\":1792781049.829,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:44:05.736Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"$event_type\":\"click\",\"$ce_version\":1,\"$elements_chain\":\"a:attr__href=\\\"/pricing\\\"attr__id=\\\"next\\\"attr_id=\\\"next\\\"href=\\\"/pricing\\\"nth-child=\\\"1\\\"nth-of-type=\\\"1\\\"text=\\\"Next page\\\";p:nth-child=\\\"2\\\"nth-of-type=\\\"1\\\";body:nth-child=\\\"2\\\"nth-of-type=\\\"1\\\"\",\"$el_text\":\"Next page\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a13-cfea-728f-9068-768bef55c7d0\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:44:09.829Z\"}],\"sent_at\":\"2026-10-23T18:44:09.839Z\"}"
+    },
+    {
+      "phase": "referrer-email",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "referrer-email",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1088,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a13-e006-75b0-8049-2e6d14bcfff5\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/pricing\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/pricing\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"61a3pqj6mxssnd4b\",\"$time\":1792781049.863,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:44:09.860Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Pricing\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a13-e006-75b0-8049-2e6d14bcfff5\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":98.33},\"timestamp\":\"2026-10-23T18:44:09.862Z\"}],\"sent_at\":\"2026-10-23T18:44:09.863Z\"}"
+    },
+    {
+      "phase": "referrer-email",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1079,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a13-efda-7ab7-9ef0-dd49f65c519c\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"xr1ly15lalimh6g5\",\"$time\":1792781053.914,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:44:13.911Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Test shop\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a13-efda-7ab7-9ef0-dd49f65c519c\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:44:13.914Z\"}],\"sent_at\":\"2026-10-23T18:44:13.914Z\"}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "query-jwt-other-name",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "query-jwt-other-name",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1139,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a13-f9cb-7d72-bd06-65b3ec9db401\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/app?t=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0ODIxMyJ9.c2lnbmF0dXJlLXRlc3Q\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/app\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"v3h3khbw2a1ae3op\",\"$time\":1792781056.459,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:44:16.457Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Page\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a13-f9cb-7d72-bd06-65b3ec9db401\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:44:16.459Z\"}],\"sent_at\":\"2026-10-23T18:44:16.459Z\"}"
+    },
+    {
+      "phase": "query-jwt-other-name",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1085,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a14-099e-759c-879b-d681cb77063b\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"4aovbv1m8zx552o9\",\"$time\":1792781060.51,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:44:20.508Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Test shop\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a14-099e-759c-879b-d681cb77063b\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:44:20.510Z\"}],\"sent_at\":\"2026-10-23T18:44:20.511Z\"}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "keep-search",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "keep-search",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1100,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a14-1395-7d8b-980c-e96a630e7172\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/search?q=running+shoes\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/search\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"h3pzuf02e2nulae6\",\"$time\":1792781063.061,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:44:23.058Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Page\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a14-1395-7d8b-980c-e96a630e7172\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:44:23.061Z\"}],\"sent_at\":\"2026-10-23T18:44:23.061Z\"}"
+    },
+    {
+      "phase": "keep-search",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1085,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a14-235b-7e84-8fc9-e4315cb8de4e\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"xf4q4z601p4gfvfo\",\"$time\":1792781067.099,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:44:27.097Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Test shop\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a14-235b-7e84-8fc9-e4315cb8de4e\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:44:27.099Z\"}],\"sent_at\":\"2026-10-23T18:44:27.100Z\"}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "keep-page-sort",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "keep-page-sort",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1103,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a14-2d50-77d7-b584-3624d15402d0\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/products?page=2&sort=price\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/products\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"54utkkj04ts9zrhg\",\"$time\":1792781069.649,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:44:29.646Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Page\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a14-2d50-77d7-b584-3624d15402d0\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:44:29.648Z\"}],\"sent_at\":\"2026-10-23T18:44:29.649Z\"}"
+    },
+    {
+      "phase": "keep-page-sort",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1084,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a14-3d24-705c-9d1e-f1ed34f1ad40\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"p0bf73pcir7pr7b0\",\"$time\":1792781073.701,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:44:33.698Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Test shop\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a14-3d24-705c-9d1e-f1ed34f1ad40\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:44:33.700Z\"}],\"sent_at\":\"2026-10-23T18:44:33.701Z\"}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "keep-slug",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "keep-slug",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1100,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a14-4719-79d4-aaac-2aa41ae6cab8\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/products/blue-running-shoes\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/products/blue-running-shoes\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"dlyg56gvee2q5gby\",\"$time\":1792781076.25,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:44:36.247Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Page\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a14-4719-79d4-aaac-2aa41ae6cab8\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:44:36.249Z\"}],\"sent_at\":\"2026-10-23T18:44:36.250Z\"}"
+    },
+    {
+      "phase": "keep-slug",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1080,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a14-56f0-7eaf-95d4-90ff890a5180\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"rfd0e95eatf8k6x8\",\"$time\":1792781080.304,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:44:40.302Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Test shop\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a14-56f0-7eaf-95d4-90ff890a5180\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:44:40.304Z\"}],\"sent_at\":\"2026-10-23T18:44:40.304Z\"}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "keep-date",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "keep-date",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1100,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a14-60e8-71a9-a8f5-13d886a48b22\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/blog/2026/10/launch-notes\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/blog/2026/10/launch-notes\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"ggxor11af00qbpy7\",\"$time\":1792781082.857,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:44:42.854Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Page\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a14-60e8-71a9-a8f5-13d886a48b22\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:44:42.856Z\"}],\"sent_at\":\"2026-10-23T18:44:42.857Z\"}"
+    },
+    {
+      "phase": "keep-date",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "between",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1085,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a14-70a8-7c31-9c12-e2684c4d7bd3\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"a6df8gl390dgzr07\",\"$time\":1792781086.888,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:44:46.886Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Test shop\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a14-70a8-7c31-9c12-e2684c4d7bd3\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:44:46.888Z\"}],\"sent_at\":\"2026-10-23T18:44:46.889Z\"}"
+    },
+    {
+      "phase": "between",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "keep-version",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/array/phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST/config.js",
+      "bodyBytes": 0,
+      "urlBytes": 96,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "keep-version",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1093,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a14-7a9b-77af-8fbe-79f3d9727734\",\"event\":\"$pageview\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/docs/v2/install\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/docs/v2/install\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"yr5rnbze1mwm7bqn\",\"$time\":1792781089.436,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:44:49.433Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"title\":\"Page\",\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a14-7a9b-77af-8fbe-79f3d9727734\",\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:44:49.435Z\"}],\"sent_at\":\"2026-10-23T18:44:49.436Z\"}"
+    },
+    {
+      "phase": "keep-version",
+      "method": "GET",
+      "url": "https://us-assets.i.posthog.com/static/1.438.19/surveys.js",
+      "bodyBytes": 0,
+      "urlBytes": 58,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "close",
+      "method": "POST",
+      "url": "https://us.i.posthog.com/e/",
+      "bodyBytes": 1185,
+      "urlBytes": 27,
+      "contentType": "text/plain",
+      "cookieHeader": null,
+      "body": "{\"api_key\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"batch\":[{\"uuid\":\"01a16a14-8a45-7da1-adc6-90b4ee089a95\",\"event\":\"$pageleave\",\"properties\":{\"$os\":\"Mac OS X\",\"$os_version\":\"10.15.7\",\"$browser\":\"Chrome\",\"$device_type\":\"Desktop\",\"$timezone\":\"Europe/Berlin\",\"$timezone_offset\":-120,\"$current_url\":\"https://cookieless-test.example/docs/v2/install\",\"$host\":\"cookieless-test.example\",\"$pathname\":\"/docs/v2/install\",\"$raw_user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\",\"$browser_version\":141,\"$browser_language\":\"en-US\",\"$browser_language_prefix\":\"en\",\"$screen_height\":800,\"$screen_width\":1280,\"$viewport_height\":800,\"$viewport_width\":1280,\"$lib\":\"web\",\"$lib_version\":\"1.438.19\",\"$insert_id\":\"06uhr38hgx2zhcto\",\"$time\":1792781093.445,\"$sdk_dist_channel\":\"cdn\",\"$device_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"distinct_id\":\"01a16a13-118e-722e-994b-702687d4ac0b\",\"$initialization_time\":\"2026-10-23T18:44:49.433Z\",\"$configured_session_timeout_ms\":1800000,\"$autocapture_disabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$dead_clicks_enabled_server_side\":false,\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":0,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\",\"li_fat_id\":null,\"utm_source\":\"newsletter\",\"utm_medium\":null,\"utm_campaign\":null,\"utm_content\":null,\"utm_term\":null,\"gad_source\":null,\"mc_cid\":null,\"gclid\":null,\"gclsrc\":null,\"dclid\":null,\"gbraid\":null,\"wbraid\":null,\"fbclid\":null,\"msclkid\":null,\"twclid\":null,\"igshid\":null,\"ttclid\":null,\"rdt_cid\":null,\"epik\":null,\"qclid\":null,\"sccid\":null,\"oppref\":null,\"bfcid\":null,\"irclid\":null,\"_kx\":null,\"token\":\"phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST\",\"$config_defaults\":\"2025-05-24\",\"$session_id\":\"01a16a13-1197-7dac-ad99-a50eae34ba28\",\"$window_id\":\"01a16a13-1197-7dac-ad99-a50f730aa6f3\",\"$session_entry_referrer\":\"$direct\",\"$session_entry_referring_domain\":\"$direct\",\"$session_entry_url\":\"https://cookieless-test.example/\",\"$session_entry_host\":\"cookieless-test.example\",\"$session_entry_pathname\":\"/\",\"$recording_status\":\"disabled\",\"$sdk_debug_retry_queue_size\":0,\"$pageview_id\":\"01a16a14-7a9b-77af-8fbe-79f3d9727734\",\"$prev_pageview_id\":\"01a16a14-7a9b-77af-8fbe-79f3d9727734\",\"$prev_pageview_last_scroll\":0,\"$prev_pageview_last_scroll_percentage\":1,\"$prev_pageview_max_scroll\":0,\"$prev_pageview_max_scroll_percentage\":1,\"$prev_pageview_last_content\":800,\"$prev_pageview_last_content_percentage\":1,\"$prev_pageview_max_content\":800,\"$prev_pageview_max_content_percentage\":1,\"$prev_pageview_pathname\":\"/docs/v2/install\",\"$prev_pageview_duration\":4.01,\"$is_identified\":false,\"$process_person_profile\":false,\"$lib_rate_limit_remaining_tokens\":99},\"timestamp\":\"2026-10-23T18:44:53.445Z\"}],\"sent_at\":\"2026-10-23T18:44:53.447Z\"}"
+    }
+  ],
+  "ranAt": "2026-10-23T18:44:55.453Z"
+}

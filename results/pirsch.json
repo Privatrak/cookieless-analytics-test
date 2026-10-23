@@ -1,0 +1,126 @@
+{
+  "tool": "pirsch",
+  "note": null,
+  "scripts": [
+    {
+      "url": "https://api.pirsch.io/pa.js",
+      "bytes": 11842,
+      "gzip": 3503
+    },
+    {
+      "url": "https://api.pirsch.io/pa.js",
+      "bytes": 11842,
+      "gzip": 3503
+    },
+    {
+      "url": "https://api.pirsch.io/pa.js",
+      "bytes": 11842,
+      "gzip": 3503
+    },
+    {
+      "url": "https://api.pirsch.io/pa.js",
+      "bytes": 11842,
+      "gzip": 3503
+    },
+    {
+      "url": "https://api.pirsch.io/pa.js",
+      "bytes": 11842,
+      "gzip": 3503
+    }
+  ],
+  "afterLoad": {
+    "cookies": [],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": []
+  },
+  "afterVisit": {
+    "cookies": [],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": []
+  },
+  "sent": [
+    {
+      "phase": "load",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792779837615&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2F&t=Test%20shop&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 157,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "download",
+      "method": "POST",
+      "url": "https://api.pirsch.io/event",
+      "bodyBytes": 296,
+      "urlBytes": 27,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"identification_code\":\"TESTCODE0123456789abcdefTESTCODE\",\"url\":\"https://cookieless-test.example/\",\"title\":\"Test shop\",\"referrer\":\"\",\"screen_width\":1280,\"screen_height\":800,\"tags\":{},\"event_name\":\"File Download\",\"event_duration\":0,\"event_meta\":{\"file\":\"/files/report.pdf\"},\"non_interactive\":true}"
+    },
+    {
+      "phase": "internal-link",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792779872270&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2Fpricing&t=Pricing&ref=https%3A%2F%2Fcookieless-test.example%2F&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 200,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "back",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792779876289&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2F&t=Test%20shop&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 157,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "outbound",
+      "method": "POST",
+      "url": "https://api.pirsch.io/event",
+      "bodyBytes": 311,
+      "urlBytes": 27,
+      "contentType": "text/plain;charset=UTF-8",
+      "cookieHeader": null,
+      "body": "{\"identification_code\":\"TESTCODE0123456789abcdefTESTCODE\",\"url\":\"https://cookieless-test.example/\",\"title\":\"Test shop\",\"referrer\":\"\",\"screen_width\":1280,\"screen_height\":800,\"tags\":{},\"event_name\":\"Outbound Link Click\",\"event_duration\":0,\"event_meta\":{\"url\":\"https://example.org/partner\"},\"non_interactive\":true}"
+    },
+    {
+      "phase": "back-from-outbound",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792779882395&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2F&t=Test%20shop&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 157,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "form",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792779886469&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2Fthanks&t=Thanks&ref=https%3A%2F%2Fcookieless-test.example%2F&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 198,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "email-in-url",
+      "method": "GET",
+      "url": "https://api.pirsch.io/hit?nc=1792779890487&code=TESTCODE0123456789abcdefTESTCODE&url=https%3A%2F%2Fcookieless-test.example%2Fwelcome%3Femail%3Dsomeone%2540example.com%26utm_source%3Dnewsletter&t=Welcome&ref=&w=1280&h=800",
+      "bodyBytes": 0,
+      "urlBytes": 220,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    }
+  ],
+  "ranAt": "2026-10-23T18:24:56.520Z"
+}

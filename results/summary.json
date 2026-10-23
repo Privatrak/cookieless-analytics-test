@@ -1,0 +1,353 @@
+{
+  "plausible": {
+    "scriptGzip": 2670,
+    "extraScriptsGzip": 0,
+    "cookies": [],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": [],
+    "requests": 12,
+    "bytesSent": 1839,
+    "pageViews": 6,
+    "sessionRecording": false,
+    "recorded": {},
+    "emailInUrl": "leaked"
+  },
+  "fathom": {
+    "scriptGzip": 2083,
+    "extraScriptsGzip": 0,
+    "cookies": [],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": [],
+    "requests": 12,
+    "bytesSent": 1497,
+    "pageViews": 6,
+    "sessionRecording": false,
+    "recorded": {},
+    "emailInUrl": "dropped"
+  },
+  "simpleanalytics": {
+    "scriptGzip": 3830,
+    "extraScriptsGzip": 0,
+    "cookies": [],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": [],
+    "requests": 12,
+    "bytesSent": 6427,
+    "pageViews": 6,
+    "sessionRecording": false,
+    "recorded": {},
+    "emailInUrl": "dropped"
+  },
+  "umami": {
+    "scriptGzip": 2324,
+    "extraScriptsGzip": 0,
+    "cookies": [],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": [],
+    "requests": 6,
+    "bytesSent": 1631,
+    "pageViews": 6,
+    "sessionRecording": false,
+    "recorded": {},
+    "emailInUrl": "leaked"
+  },
+  "pirsch": {
+    "scriptGzip": 3503,
+    "extraScriptsGzip": 0,
+    "cookies": [],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": [],
+    "requests": 8,
+    "bytesSent": 1750,
+    "pageViews": 6,
+    "sessionRecording": false,
+    "recorded": {
+      "download": [
+        "download"
+      ],
+      "outbound": [
+        "outbound-link"
+      ]
+    },
+    "emailInUrl": "leaked"
+  },
+  "matomo": {
+    "scriptGzip": 22170,
+    "extraScriptsGzip": 0,
+    "cookies": [
+      {
+        "name": "_pk_id.1.b0c1",
+        "expires": "2027-11-20T18:24:57.000Z"
+      },
+      {
+        "name": "_pk_ses.1.b0c1",
+        "expires": "2026-10-23T18:55:49.000Z"
+      }
+    ],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": [],
+    "requests": 8,
+    "bytesSent": 6204,
+    "pageViews": 6,
+    "sessionRecording": false,
+    "recorded": {
+      "download": [
+        "download"
+      ],
+      "outbound": [
+        "outbound-link"
+      ]
+    },
+    "emailInUrl": "leaked"
+  },
+  "matomo-cookieless": {
+    "scriptGzip": 22170,
+    "extraScriptsGzip": 0,
+    "cookies": [],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": [],
+    "requests": 8,
+    "bytesSent": 6102,
+    "pageViews": 6,
+    "sessionRecording": false,
+    "recorded": {
+      "download": [
+        "download"
+      ],
+      "outbound": [
+        "outbound-link"
+      ]
+    },
+    "emailInUrl": "leaked"
+  },
+  "posthog": {
+    "scriptGzip": 106303,
+    "extraScriptsGzip": 0,
+    "cookies": [
+      {
+        "name": "ph_phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST_posthog",
+        "expires": "2027-10-23T18:27:48.000Z"
+      }
+    ],
+    "localStorage": [
+      "ph_phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST_posthog"
+    ],
+    "sessionStorage": [
+      "ph_phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST_window_id",
+      "ph_phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST_posthog",
+      "ph_phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST_session_registered_properties",
+      "ph_phc_TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST_primary_window_exists"
+    ],
+    "indexedDB": [],
+    "requests": 24,
+    "bytesSent": 16542,
+    "pageViews": 6,
+    "sessionRecording": false,
+    "recorded": {
+      "button": [
+        "click"
+      ],
+      "dead-clicks": [
+        "click",
+        "rage-click"
+      ],
+      "clickable-picture": [
+        "click",
+        "rage-click"
+      ],
+      "download": [
+        "click"
+      ],
+      "internal-link": [
+        "click"
+      ],
+      "outbound": [
+        "click"
+      ],
+      "form": [
+        "click",
+        "form-submit"
+      ]
+    },
+    "emailInUrl": "leaked"
+  },
+  "posthog-cookieless": {
+    "scriptGzip": 106303,
+    "extraScriptsGzip": 0,
+    "cookies": [],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": [],
+    "requests": 19,
+    "bytesSent": 14402,
+    "pageViews": 6,
+    "sessionRecording": false,
+    "recorded": {
+      "button": [
+        "click"
+      ],
+      "dead-clicks": [
+        "click",
+        "rage-click"
+      ],
+      "clickable-picture": [
+        "click",
+        "rage-click"
+      ],
+      "download": [
+        "click"
+      ],
+      "internal-link": [
+        "click"
+      ],
+      "outbound": [
+        "click"
+      ],
+      "form": [
+        "click",
+        "form-submit"
+      ]
+    },
+    "emailInUrl": "leaked"
+  },
+  "mixpanel": {
+    "scriptGzip": 33703,
+    "extraScriptsGzip": 104988,
+    "cookies": [],
+    "localStorage": [
+      "mp_0123456789abcdef0123456789abcdef_mixpanel",
+      "__mpq_0123456789abcdef0123456789abcdef_ev"
+    ],
+    "sessionStorage": [
+      "mp_tab_id_mixpanel_0123456789abcdef0123456789abcdef",
+      "mp_gen_new_tab_id_mixpanel_0123456789abcdef0123456789abcdef"
+    ],
+    "indexedDB": [
+      "mixpanelBrowserDb",
+      "mixpanelFlagsDb"
+    ],
+    "requests": 21,
+    "bytesSent": 87342,
+    "pageViews": 6,
+    "sessionRecording": true,
+    "recorded": {
+      "button": [
+        "click"
+      ],
+      "dead-clicks": [
+        "click",
+        "dead-click",
+        "rage-click"
+      ],
+      "clickable-picture": [
+        "click",
+        "dead-click",
+        "rage-click"
+      ],
+      "download": [
+        "click",
+        "dead-click"
+      ],
+      "internal-link": [
+        "click"
+      ],
+      "outbound": [
+        "click"
+      ],
+      "form": [
+        "click"
+      ]
+    },
+    "emailInUrl": "leaked"
+  },
+  "mixpanel-cookieless": {
+    "scriptGzip": 33703,
+    "extraScriptsGzip": 104988,
+    "cookies": [],
+    "localStorage": [
+      "__mpq_0123456789abcdef0123456789abcdef_ev"
+    ],
+    "sessionStorage": [],
+    "indexedDB": [],
+    "requests": 20,
+    "bytesSent": 86973,
+    "pageViews": 6,
+    "sessionRecording": true,
+    "recorded": {
+      "button": [
+        "click"
+      ],
+      "dead-clicks": [
+        "click",
+        "dead-click",
+        "rage-click"
+      ],
+      "clickable-picture": [
+        "click",
+        "dead-click",
+        "rage-click"
+      ],
+      "download": [
+        "click",
+        "dead-click"
+      ],
+      "internal-link": [
+        "click"
+      ],
+      "outbound": [
+        "click"
+      ],
+      "form": [
+        "click"
+      ]
+    },
+    "emailInUrl": "leaked"
+  },
+  "privatrak": {
+    "scriptGzip": 14249,
+    "extraScriptsGzip": 0,
+    "cookies": [],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": [],
+    "requests": 20,
+    "bytesSent": 4465,
+    "pageViews": 6,
+    "sessionRecording": false,
+    "recorded": {
+      "button": [
+        "click"
+      ],
+      "dead-clicks": [
+        "click",
+        "dead-click",
+        "rage-click"
+      ],
+      "clickable-picture": [
+        "dead-click",
+        "rage-click"
+      ],
+      "download": [
+        "click"
+      ],
+      "internal-link": [
+        "click"
+      ],
+      "outbound": [
+        "click"
+      ],
+      "form": [
+        "click",
+        "form-submit"
+      ]
+    },
+    "emailInUrl": "redacted"
+  }
+}

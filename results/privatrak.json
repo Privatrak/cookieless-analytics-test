@@ -1,0 +1,246 @@
+{
+  "tool": "privatrak",
+  "note": null,
+  "scripts": [
+    {
+      "url": "https://api.privatrak.com/tracker.js",
+      "bytes": 39578,
+      "gzip": 14249
+    },
+    {
+      "url": "https://api.privatrak.com/tracker.js",
+      "bytes": 39578,
+      "gzip": 14249
+    },
+    {
+      "url": "https://api.privatrak.com/tracker.js",
+      "bytes": 39578,
+      "gzip": 14249
+    },
+    {
+      "url": "https://api.privatrak.com/tracker.js",
+      "bytes": 39578,
+      "gzip": 14249
+    },
+    {
+      "url": "https://api.privatrak.com/tracker.js",
+      "bytes": 39578,
+      "gzip": 14249
+    }
+  ],
+  "afterLoad": {
+    "cookies": [],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": []
+  },
+  "afterVisit": {
+    "cookies": [],
+    "localStorage": [],
+    "sessionStorage": [],
+    "indexedDB": []
+  },
+  "sent": [
+    {
+      "phase": "load",
+      "method": "GET",
+      "url": "https://api.privatrak.com/api/config",
+      "bodyBytes": 0,
+      "urlBytes": 36,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "load",
+      "method": "POST",
+      "url": "https://api.privatrak.com/api/events",
+      "bodyBytes": 123,
+      "urlBytes": 36,
+      "contentType": "application/json",
+      "cookieHeader": null,
+      "body": "{\"events\":[{\"event_type\":\"pageview\",\"page_url\":\"https://cookieless-test.example/\",\"timestamp\":\"2026-10-23T18:30:52.186Z\"}]}"
+    },
+    {
+      "phase": "button",
+      "method": "POST",
+      "url": "https://api.privatrak.com/api/events",
+      "bodyBytes": 267,
+      "urlBytes": 36,
+      "contentType": "application/json",
+      "cookieHeader": null,
+      "body": "{\"events\":[{\"event_type\":\"click\",\"page_url\":\"https://cookieless-test.example/\",\"element_tag\":\"button\",\"element_selector\":\"body > p > button\",\"element_selector_generalized\":\"body > p > button\",\"element_text\":\"Start free trial\",\"timestamp\":\"2026-10-23T18:30:58.284Z\"}]}"
+    },
+    {
+      "phase": "dead-clicks",
+      "method": "POST",
+      "url": "https://api.privatrak.com/api/events",
+      "bodyBytes": 541,
+      "urlBytes": 36,
+      "contentType": "application/json",
+      "cookieHeader": null,
+      "body": "{\"events\":[{\"event_type\":\"click\",\"page_url\":\"https://cookieless-test.example/\",\"element_tag\":\"button\",\"element_selector\":\"body > p > button\",\"element_selector_generalized\":\"body > p > button\",\"element_text\":\"Download report\",\"timestamp\":\"2026-10-23T18:31:04.355Z\"},{\"event_type\":\"rage_click\",\"page_url\":\"https://cookieless-test.example/\",\"element_tag\":\"button\",\"element_selector\":\"body > p > button\",\"element_selector_generalized\":\"body > p > button\",\"element_text\":\"Download report\",\"timestamp\":\"2026-10-23T18:31:04.355Z\",\"click_count\":4}]}"
+    },
+    {
+      "phase": "dead-clicks",
+      "method": "POST",
+      "url": "https://api.privatrak.com/api/events",
+      "bodyBytes": 271,
+      "urlBytes": 36,
+      "contentType": "application/json",
+      "cookieHeader": null,
+      "body": "{\"events\":[{\"event_type\":\"dead_click\",\"page_url\":\"https://cookieless-test.example/\",\"element_tag\":\"button\",\"element_selector\":\"body > p > button\",\"element_selector_generalized\":\"body > p > button\",\"element_text\":\"Download report\",\"timestamp\":\"2026-10-23T18:31:04.355Z\"}]}"
+    },
+    {
+      "phase": "clickable-picture",
+      "method": "POST",
+      "url": "https://api.privatrak.com/api/events",
+      "bodyBytes": 245,
+      "urlBytes": 36,
+      "contentType": "application/json",
+      "cookieHeader": null,
+      "body": "{\"events\":[{\"event_type\":\"rage_click\",\"page_url\":\"https://cookieless-test.example/\",\"element_tag\":\"img\",\"element_selector\":\"body > p > img\",\"element_selector_generalized\":\"body > p > img\",\"timestamp\":\"2026-10-23T18:31:12.636Z\",\"click_count\":4}]}"
+    },
+    {
+      "phase": "download",
+      "method": "POST",
+      "url": "https://api.privatrak.com/api/events",
+      "bodyBytes": 469,
+      "urlBytes": 36,
+      "contentType": "application/json",
+      "cookieHeader": null,
+      "body": "{\"events\":[{\"event_type\":\"dead_click\",\"page_url\":\"https://cookieless-test.example/\",\"element_tag\":\"img\",\"element_selector\":\"body > p > img\",\"element_selector_generalized\":\"body > p > img\",\"timestamp\":\"2026-10-23T18:31:12.636Z\"},{\"event_type\":\"click\",\"page_url\":\"https://cookieless-test.example/\",\"element_tag\":\"a\",\"element_selector\":\"body > p > a\",\"element_selector_generalized\":\"body > p > a\",\"element_text\":\"Price list (PDF)\",\"timestamp\":\"2026-10-23T18:31:20.833Z\"}]}"
+    },
+    {
+      "phase": "internal-link",
+      "method": "POST",
+      "url": "https://api.privatrak.com/api/events",
+      "bodyBytes": 274,
+      "urlBytes": 36,
+      "contentType": "application/json",
+      "cookieHeader": null,
+      "body": "{\"events\":[{\"event_type\":\"click\",\"page_url\":\"https://cookieless-test.example/\",\"element_tag\":\"a\",\"element_selector\":\"body > p > a\",\"element_selector_generalized\":\"body > p > a\",\"element_text\":\"Pricing\",\"timestamp\":\"2026-10-23T18:31:26.881Z\"}],\"api_key\":\"pk_test_cookieless\"}"
+    },
+    {
+      "phase": "internal-link",
+      "method": "GET",
+      "url": "https://api.privatrak.com/api/config",
+      "bodyBytes": 0,
+      "urlBytes": 36,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "internal-link",
+      "method": "POST",
+      "url": "https://api.privatrak.com/api/events",
+      "bodyBytes": 176,
+      "urlBytes": 36,
+      "contentType": "application/json",
+      "cookieHeader": null,
+      "body": "{\"events\":[{\"event_type\":\"pageview\",\"page_url\":\"https://cookieless-test.example/pricing\",\"referrer\":\"https://cookieless-test.example/\",\"timestamp\":\"2026-10-23T18:31:26.892Z\"}]}"
+    },
+    {
+      "phase": "back",
+      "method": "GET",
+      "url": "https://api.privatrak.com/api/config",
+      "bodyBytes": 0,
+      "urlBytes": 36,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "back",
+      "method": "POST",
+      "url": "https://api.privatrak.com/api/events",
+      "bodyBytes": 123,
+      "urlBytes": 36,
+      "contentType": "application/json",
+      "cookieHeader": null,
+      "body": "{\"events\":[{\"event_type\":\"pageview\",\"page_url\":\"https://cookieless-test.example/\",\"timestamp\":\"2026-10-23T18:31:30.904Z\"}]}"
+    },
+    {
+      "phase": "outbound",
+      "method": "POST",
+      "url": "https://api.privatrak.com/api/events",
+      "bodyBytes": 278,
+      "urlBytes": 36,
+      "contentType": "application/json",
+      "cookieHeader": null,
+      "body": "{\"events\":[{\"event_type\":\"click\",\"page_url\":\"https://cookieless-test.example/\",\"element_tag\":\"a\",\"element_selector\":\"body > p > a\",\"element_selector_generalized\":\"body > p > a\",\"element_text\":\"Our partner\",\"timestamp\":\"2026-10-23T18:31:34.948Z\"}],\"api_key\":\"pk_test_cookieless\"}"
+    },
+    {
+      "phase": "back-from-outbound",
+      "method": "GET",
+      "url": "https://api.privatrak.com/api/config",
+      "bodyBytes": 0,
+      "urlBytes": 36,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "back-from-outbound",
+      "method": "POST",
+      "url": "https://api.privatrak.com/api/events",
+      "bodyBytes": 123,
+      "urlBytes": 36,
+      "contentType": "application/json",
+      "cookieHeader": null,
+      "body": "{\"events\":[{\"event_type\":\"pageview\",\"page_url\":\"https://cookieless-test.example/\",\"timestamp\":\"2026-10-23T18:31:36.994Z\"}]}"
+    },
+    {
+      "phase": "form",
+      "method": "POST",
+      "url": "https://api.privatrak.com/api/events",
+      "bodyBytes": 510,
+      "urlBytes": 36,
+      "contentType": "application/json",
+      "cookieHeader": null,
+      "body": "{\"events\":[{\"event_type\":\"click\",\"page_url\":\"https://cookieless-test.example/\",\"element_tag\":\"button\",\"element_selector\":\"body > form > button\",\"element_selector_generalized\":\"body > form > button\",\"element_text\":\"Subscribe\",\"timestamp\":\"2026-10-23T18:31:41.048Z\"},{\"event_type\":\"form_submit\",\"page_url\":\"https://cookieless-test.example/\",\"element_tag\":\"form\",\"element_selector\":\"body > form\",\"element_selector_generalized\":\"body > form\",\"timestamp\":\"2026-10-23T18:31:41.048Z\"}],\"api_key\":\"pk_test_cookieless\"}"
+    },
+    {
+      "phase": "form",
+      "method": "GET",
+      "url": "https://api.privatrak.com/api/config",
+      "bodyBytes": 0,
+      "urlBytes": 36,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "form",
+      "method": "POST",
+      "url": "https://api.privatrak.com/api/events",
+      "bodyBytes": 175,
+      "urlBytes": 36,
+      "contentType": "application/json",
+      "cookieHeader": null,
+      "body": "{\"events\":[{\"event_type\":\"pageview\",\"page_url\":\"https://cookieless-test.example/thanks\",\"referrer\":\"https://cookieless-test.example/\",\"timestamp\":\"2026-10-23T18:31:41.071Z\"}]}"
+    },
+    {
+      "phase": "email-in-url",
+      "method": "GET",
+      "url": "https://api.privatrak.com/api/config",
+      "bodyBytes": 0,
+      "urlBytes": 36,
+      "contentType": null,
+      "cookieHeader": null,
+      "body": null
+    },
+    {
+      "phase": "email-in-url",
+      "method": "POST",
+      "url": "https://api.privatrak.com/api/events",
+      "bodyBytes": 170,
+      "urlBytes": 36,
+      "contentType": "application/json",
+      "cookieHeader": null,
+      "body": "{\"events\":[{\"event_type\":\"pageview\",\"page_url\":\"https://cookieless-test.example/welcome?email=%3Aredacted&utm_source=newsletter\",\"timestamp\":\"2026-10-23T18:31:45.087Z\"}]}"
+    }
+  ],
+  "ranAt": "2026-10-23T18:31:51.108Z"
+}
